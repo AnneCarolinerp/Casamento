@@ -147,6 +147,14 @@ p { margin: 0; }
   color: var(--ouro-claro); margin: 0 4px; font-variant-numeric: lining-nums tabular-nums;
 }
 .capa-local { color: #F2DADA; }
+.capa-versiculo {
+  max-width: 1000px; margin: 22px auto 0; padding: 0 clamp(16px, 4vw, 32px);
+  font-family: var(--display); font-style: italic; font-size: 1.15rem; line-height: 1.5; color: #F2DADA;
+}
+.capa-versiculo span {
+  font-family: var(--bilhete); font-style: normal; font-weight: 600; font-size: .85rem; letter-spacing: .14em;
+  color: var(--ouro-claro); margin-left: 8px; white-space: nowrap;
+}
 
 /* Seções */
 .secao { padding: clamp(56px, 9vw, 104px) clamp(16px, 4vw, 32px); }
@@ -330,7 +338,7 @@ p { margin: 0; }
       <div class="bilhete-principal">
         <div class="bilhete-faixa"><span class="cia">A&amp;M Linhas Aéreas</span><span>Cartão de embarque</span></div>
         <div class="rota">
-          <div class="porto"><span class="codigo">ANN</span><span class="porto-nome">Anne Caroline</span></div>
+          <div class="porto"><span class="codigo">CAR</span><span class="porto-nome">Anne Caroline</span></div>
           <svg class="trajeto" viewBox="0 0 200 60" aria-hidden="true">
             <path id="arco" class="arco" d="M8 52 Q100 -8 192 52"/>
             <circle class="ponto" cx="8" cy="52" r="3"/>
@@ -369,6 +377,7 @@ p { margin: 0; }
     <p class="contagem" id="contagem">Faltam <strong>459</strong> dias para a decolagem</p>
     <p class="capa-local">Domingo, 20 de fevereiro de 2028, em Caucaia (CE)</p>
   </div>
+  <p class="capa-versiculo">“Aonde quer que tu fores, irei eu; e onde quer que pousares, ali pousarei eu.” <span>RUTE 1:16</span></p>
 </header>
 
 <main>
