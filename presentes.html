@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lista de presentes de Anne Caroline e Marcos</title>
+<meta name="description" content="Lista de presentes em Pix do casamento de Anne Caroline e Marcos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: cabeçalho vermelho com as instruções; grade de cotas ilustradas em papel branco; o Pix abre num envelope de correio aéreo por cima da página */
+  color-scheme: light;
+  --vermelho: #9B1C24;
+  --vermelho-profundo: #7A121A;
+  --ouro: #B0843A;
+  --ouro-claro: #E0C27E;
+  --papel: #FFFFFF;
+  --nevoa: #F8F1EE;
+  --tinta: #2B1517;
+  --tinta-suave: #6E5254;
+  --linha: #EADBD5;
+  --display: "Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
+  --texto: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --bilhete: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --listra: repeating-linear-gradient(-45deg, #9B1C24 0 12px, #FFFFFF 12px 22px, #B0843A 22px 34px, #FFFFFF 34px 44px);
+  --foco: var(--vermelho);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font-family: var(--texto); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+p { margin: 0; }
+a { color: inherit; }
+svg { max-width: 100%; }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 4px; }
+.listra { height: 12px; background: var(--listra); }
+
+.botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+.botao {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--texto); font-weight: 600; font-size: 1rem; line-height: 1.2;
+  padding: 13px 22px; border-radius: 999px; border: 1.5px solid var(--vermelho);
+  background: var(--vermelho); color: var(--papel); text-decoration: none; cursor: pointer;
+}
+.botao:hover { background: var(--vermelho-profundo); border-color: var(--vermelho-profundo); }
+.botao-contorno { background: transparent; color: var(--vermelho); }
+.botao-contorno:hover { background: var(--vermelho); border-color: var(--vermelho); color: var(--papel); }
+.aviso { min-height: 1.5em; font-size: .95rem; color: var(--tinta-suave); }
+.dica { font-size: .92rem; color: var(--tinta-suave); }
+.erro { color: var(--vermelho); font-weight: 600; }
+.rotulo { font-family: var(--bilhete); font-weight: 500; text-transform: uppercase; letter-spacing: .14em; font-size: .82rem; color: var(--tinta-suave); }
+
+/* Cabeçalho */
+.topo { background: var(--vermelho-profundo); color: var(--papel); --foco: var(--ouro-claro); }
+.topo-nav {
+  max-width: 1080px; margin: 0 auto; padding: 18px clamp(16px, 4vw, 32px);
+  display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; justify-content: space-between;
+}
+.monograma { font-family: var(--display); font-style: italic; font-size: 1.6rem; line-height: 1; text-decoration: none; color: var(--ouro-claro); }
+.voltar { font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--ouro-claro); padding-bottom: 2px; }
+.topo-conteudo {
+  max-width: 1080px; margin: 0 auto; padding: clamp(20px, 4vw, 40px) clamp(16px, 4vw, 32px) clamp(40px, 6vw, 64px);
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px clamp(32px, 6vw, 72px); align-items: end;
+}
+.topo h1 {
+  font-family: var(--display); font-style: italic; font-weight: 500; font-size: clamp(2.6rem, 7vw, 4.6rem);
+  line-height: 1; margin: 0 0 18px; text-wrap: balance;
+}
+.topo-intro { color: #F6E4E2; max-width: 46ch; }
+.passos { list-style: none; counter-reset: passo; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.passos li { counter-increment: passo; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.passos li::before {
+  content: counter(passo); display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--ouro-claro); color: var(--vermelho-profundo); font-family: var(--bilhete); font-weight: 700; font-size: 1rem;
+}
+
+/* Cotas */
+.principal { max-width: 1080px; margin: 0 auto; padding: clamp(36px, 6vw, 64px) clamp(16px, 4vw, 32px) clamp(56px, 8vw, 96px); }
+.cotas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+.cota {
+  width: 100%; height: 100%; margin: 0; padding: 0; cursor: pointer; text-align: left;
+  display: flex; flex-direction: column; font: inherit; color: inherit;
+  background: var(--papel); border: 1.5px solid var(--linha); border-radius: 14px; overflow: hidden;
+}
+.cota:hover { border-color: var(--vermelho); }
+.cota:focus-visible { outline-offset: 2px; border-radius: 14px; }
+.cota-figura { display: block; background: var(--nevoa); aspect-ratio: 4 / 3; }
+.cota-figura svg, .cota-figura img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.cota-texto { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px 18px; flex: 1; }
+.cota-nome { line-height: 1.4; flex: 1; }
+.cota-rodape { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.cota-valor { font-family: var(--bilhete); font-weight: 700; font-size: 1.5rem; line-height: 1; color: var(--vermelho); white-space: nowrap; }
+.cota-acao { font-weight: 600; font-size: .95rem; color: var(--vermelho); text-decoration: underline; text-underline-offset: 3px; }
+.sem-dados { color: var(--tinta-suave); }
+
+/* Ilustrações */
+.f-v { fill: var(--vermelho); } .f-vp { fill: var(--vermelho-profundo); } .f-o { fill: var(--ouro); } .f-oc { fill: var(--ouro-claro); }
+.f-p { fill: var(--papel); } .f-t { fill: var(--tinta); } .f-l { fill: var(--linha); }
+.s-o { fill: none; stroke: var(--ouro); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.s-v { fill: none; stroke: var(--vermelho); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.s-t { fill: none; stroke: var(--tinta); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.s-l { fill: none; stroke: var(--linha); stroke-width: 2; stroke-linecap: round; }
+.s-ts { fill: none; stroke: var(--tinta-suave); stroke-width: 1.4; }
+.tx { font-family: var(--bilhete); font-weight: 700; }
+.meme {
+  font-family: var(--bilhete); font-weight: 700; letter-spacing: .03em; word-spacing: .18em;
+  fill: #fff; stroke: #1C0D0E; stroke-width: 2.6px; stroke-linejoin: round; paint-order: stroke;
+}
+.dx { font-family: var(--display); font-style: italic; }
+
+/* Envelope do Pix */
+.dialogo {
+  width: min(520px, calc(100% - 24px)); max-height: calc(100% - 24px); margin: auto; padding: 0;
+  border: 0; background: transparent; overflow: auto;
+}
+.dialogo::backdrop { background: rgba(43, 21, 23, .62); }
+.envelope { padding: 10px; background: var(--listra); border-radius: 8px; }
+.envelope-corpo { position: relative; background: var(--papel); border-radius: 4px; padding: 22px 24px 24px; display: flex; flex-direction: column; gap: 14px; }
+.fechar {
+  position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-radius: 50%;
+  border: 1.5px solid var(--linha); background: var(--papel); color: var(--tinta); font-size: 1.4rem; line-height: 1; cursor: pointer;
+}
+.fechar:hover { border-color: var(--vermelho); color: var(--vermelho); }
+.dlg-cabeca { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; align-items: center; padding-right: 36px; }
+.dlg-figura { border-radius: 10px; overflow: hidden; background: var(--nevoa); aspect-ratio: 4 / 3; }
+.dlg-figura svg, .dlg-figura img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.dlg-titulo { font-family: var(--display); font-weight: 500; font-size: 1.3rem; line-height: 1.25; margin: 4px 0 0; text-wrap: balance; }
+.dlg-valor { font-family: var(--bilhete); font-weight: 700; font-size: 2.6rem; line-height: 1; color: var(--vermelho); }
+.linha-picote { border: 0; border-top: 2px dashed var(--linha); margin: 2px 0; width: 100%; }
+.bloco { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.chave { font-family: var(--bilhete); font-weight: 600; font-size: 1.4rem; line-height: 1.2; overflow-wrap: anywhere; }
+.chave.vazia { font-weight: 500; font-size: 1.15rem; color: var(--tinta-suave); }
+.campo { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.campo label { font-weight: 600; font-size: 1rem; }
+.opcional { font-weight: 400; color: var(--tinta-suave); }
+.campo input, .campo textarea {
+  font: inherit; color: inherit; background: var(--papel); width: 100%;
+  border: 1.5px solid var(--linha); border-radius: 8px; padding: 12px 14px;
+}
+.campo input:hover, .campo textarea:hover { border-color: #D6BFB7; }
+.campo textarea { resize: vertical; min-height: 88px; }
+
+/* Rodapé */
+.rodape { background: var(--vermelho-profundo); color: #F2DADA; --foco: var(--ouro-claro); }
+.rodape-conteudo {
+  max-width: 1080px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 32px) 40px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 10px 24px;
+}
+.rodape-nomes { font-family: var(--display); font-style: italic; font-size: 1.6rem; color: var(--ouro-claro); }
+
+@media (max-width: 760px) {
+  .topo-conteudo { grid-template-columns: minmax(0, 1fr); }
+  .cotas { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+  .cota-texto { padding: 12px 14px 14px; gap: 8px; }
+  .cota-nome { font-size: .98rem; }
+  .cota-valor { font-size: 1.3rem; }
+  .cota-acao { display: none; }
+  .dlg-cabeca { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }
+  .envelope-corpo { padding: 18px 18px 20px; }
+}
+@media (max-width: 360px) {
+  .cotas { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="listra" aria-hidden="true"></div>
+  <nav class="topo-nav" aria-label="Navegação">
+    <a class="monograma" href="index.html" aria-label="Anne Caroline e Marcos, ir para o site">A &amp; M</a>
+    <a class="voltar" href="index.html">Voltar para o site</a>
+  </nav>
+  <div class="topo-conteudo">
+    <div>
+      <h1>Lista de presentes</h1>
+      <p class="topo-intro">A sua presença já deixa a nossa festa completa. Se quiser nos presentear, escolha uma das cotas abaixo e entre na brincadeira com a gente.</p>
+    </div>
+    <ol class="passos">
+      <li>Escolha um presente.</li>
+      <li>Faça o Pix no valor da cota.</li>
+      <li>Avise a gente pelo WhatsApp, com um recado se quiser.</li>
+    </ol>
+  </div>
+</header>
+
+<main class="principal">
+  <ul class="cotas" id="cotas" aria-label="Cotas de presente"></ul>
+  <p class="sem-dados" id="sem-dados" hidden>Não foi possível carregar a lista de presentes. Atualize a página.</p>
+</main>
+
+<dialog class="dialogo" id="dialogo" aria-labelledby="dlg-titulo">
+  <div class="envelope">
+    <div class="envelope-corpo">
+      <button type="button" class="fechar" id="fechar" aria-label="Fechar">×</button>
+      <div class="dlg-cabeca">
+        <div class="dlg-figura" id="dlg-figura"></div>
+        <div>
+          <p class="rotulo">Seu presente</p>
+          <h2 class="dlg-titulo" id="dlg-titulo"></h2>
+        </div>
+      </div>
+      <div class="bloco" id="bloco-valor">
+        <p class="dlg-valor" id="dlg-valor"></p>
+        <button type="button" class="botao botao-contorno" id="copiar-valor">Copiar valor</button>
+      </div>
+      <div class="campo" id="grupo-valor-livre" hidden>
+        <label for="valor-livre">Quanto você vai mandar?</label>
+        <input type="text" id="valor-livre" name="valor-livre" inputmode="decimal" autocomplete="off" placeholder="100,00" aria-describedby="dica-valor-livre">
+        <p class="dica" id="dica-valor-livre"></p>
+      </div>
+      <hr class="linha-picote">
+      <div class="bloco">
+        <p class="rotulo">Chave Pix</p>
+        <p class="chave" id="pix-chave">Chave em breve</p>
+        <button type="button" class="botao" id="copiar-pix">Copiar chave Pix</button>
+      </div>
+      <p class="aviso" id="aviso" aria-live="polite"></p>
+      <hr class="linha-picote">
+      <div class="campo">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" autocomplete="name">
+      </div>
+      <div class="campo">
+        <label for="recado">Recado para os noivos <span class="opcional">(opcional)</span></label>
+        <textarea id="recado" name="recado" rows="3" placeholder="Vale declaração de amor, conselho de casamento ou aquela mensagem para guardar."></textarea>
+      </div>
+      <p class="erro" id="erro" hidden></p>
+      <div class="botoes">
+        <a class="botao" id="avisar-whats" href="#">Avisar pelo WhatsApp</a>
+        <button type="button" class="botao botao-contorno" id="copiar-aviso">Copiar aviso</button>
+      </div>
+      <p class="dica" id="dica-aviso">Mande o aviso depois de fazer o Pix, para a gente agradecer certinho.</p>
+    </div>
+  </div>
+</dialog>
+
+<footer class="rodape">
+  <div class="listra" aria-hidden="true"></div>
+  <div class="rodape-conteudo">
+    <p class="rodape-nomes">Anne Caroline &amp; Marcos</p>
+    <p><a href="index.html">Voltar para o site do casamento</a></p>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script>
+/* Figurinhas das cotas, no estilo meme (viewBox 160 × 120) */
+const C = { v: "#9B1C24", vp: "#7A121A", o: "#B0843A", oc: "#E0C27E", p: "#FFFFFF", n: "#F8F1EE", t: "#2B1517", ts: "#6E5254", l: "#EADBD5" };
+const PELE = "#E3AA80", CABELO = "#3F2620", GOTA = "#8FC3E8", BOCHECHA = "#EF9A8C", GRISALHO = "#CFC3BE";
+const n1 = (v) => Math.round(v * 10) / 10;
+
+function legenda(cima, baixo) {
+  const linha = (txt, y) => {
+    const tam = txt.length <= 16 ? 13 : txt.length <= 20 ? 12 : txt.length <= 24 ? 11 : 10;
+    return `<text class="meme" x="80" y="${y}" text-anchor="middle" font-size="${tam}">${txt}</text>`;
+  };
+  return (cima ? linha(cima, 19) : "") + (baixo ? linha(baixo, 113) : "");
+}
+
+function braco(x1, y1, x2, y2, cor, r) {
+  return `<path d="M${n1(x1)} ${n1(y1)}L${n1(x2)} ${n1(y2)}" stroke="${cor}" stroke-width="${n1(r * 0.55)}" stroke-linecap="round" fill="none"/>` +
+    `<circle cx="${n1(x2)}" cy="${n1(y2)}" r="${n1(r * 0.3)}" fill="${PELE}"/>`;
+}
+
+function rosto(x, y, r, o) {
+  const k = r / 16, ex = 0.38 * r, ey = y - 0.05 * r, my = y + 0.45 * r;
+  const tr = (w) => `stroke="${C.t}" stroke-width="${n1(w * k)}" stroke-linecap="round" stroke-linejoin="round" fill="none"`;
+  let s = "";
+  const dx = (o.olhar || 0) * 2.2 * k, dy = (o.olharY || 0) * 2 * k;
+  for (const sx of [-1, 1]) {
+    const cx = x + sx * ex;
+    switch (o.olhos) {
+      case "arregalado":
+        s += `<circle cx="${n1(cx)}" cy="${n1(ey)}" r="${n1(4.6 * k)}" fill="#fff" ${tr(0.9).replace('fill="none"', "")}/>` +
+             `<circle cx="${n1(cx + dx)}" cy="${n1(ey + dy)}" r="${n1(1.9 * k)}" fill="${C.t}"/>`;
+        break;
+      case "lado":
+        s += `<ellipse cx="${n1(cx)}" cy="${n1(ey)}" rx="${n1(4.6 * k)}" ry="${n1(3.2 * k)}" fill="#fff" ${tr(0.9).replace('fill="none"', "")}/>` +
+             `<circle cx="${n1(cx + (o.olhar || 1) * 2.4 * k)}" cy="${n1(ey)}" r="${n1(1.8 * k)}" fill="${C.t}"/>`;
+        break;
+      case "fechado":
+        s += `<path d="M${n1(cx - 3 * k)} ${n1(ey)}q${n1(3 * k)} ${n1(3 * k)} ${n1(6 * k)} 0" ${tr(1.6)}/>`;
+        break;
+      case "feliz":
+        s += `<path d="M${n1(cx - 3 * k)} ${n1(ey + 1 * k)}q${n1(3 * k)} ${n1(-4 * k)} ${n1(6 * k)} 0" ${tr(1.6)}/>`;
+        break;
+      case "oculos":
+        s += `<rect x="${n1(cx - 5.6 * k)}" y="${n1(ey - 3.6 * k)}" width="${n1(11.2 * k)}" height="${n1(7.4 * k)}" rx="${n1(3 * k)}" fill="${C.t}"/>`;
+        break;
+      default:
+        s += `<circle cx="${n1(cx + dx)}" cy="${n1(ey + dy)}" r="${n1(1.9 * k)}" fill="${C.t}"/>`;
+    }
+    if (o.armacao) s += `<circle cx="${n1(cx)}" cy="${n1(ey)}" r="${n1(5.4 * k)}" ${tr(1.1)}/>`;
+  }
+  if (o.olhos === "oculos") s += `<path d="M${n1(x - ex + 5.6 * k)} ${n1(ey - 1.5 * k)}H${n1(x + ex - 5.6 * k)}" ${tr(1.4)}/>`;
+  if (o.armacao) s += `<path d="M${n1(x - ex + 5.4 * k)} ${n1(ey)}H${n1(x + ex - 5.4 * k)}" ${tr(1.1)}/>`;
+  const sb = {
+    preocupada: `M${n1(x - ex - 4 * k)} ${n1(ey - 5 * k)}L${n1(x - ex + 3 * k)} ${n1(ey - 7.8 * k)}M${n1(x + ex - 3 * k)} ${n1(ey - 7.8 * k)}L${n1(x + ex + 4 * k)} ${n1(ey - 5 * k)}`,
+    brava: `M${n1(x - ex - 4 * k)} ${n1(ey - 8.4 * k)}L${n1(x - ex + 3.5 * k)} ${n1(ey - 5.2 * k)}M${n1(x + ex - 3.5 * k)} ${n1(ey - 5.2 * k)}L${n1(x + ex + 4 * k)} ${n1(ey - 8.4 * k)}`,
+    levantada: `M${n1(x - ex - 4 * k)} ${n1(ey - 6 * k)}h${n1(7 * k)}M${n1(x + ex - 3.5 * k)} ${n1(ey - 8 * k)}q${n1(3.5 * k)} ${n1(-3.4 * k)} ${n1(7 * k)} 0`
+  }[o.sobr];
+  if (sb) s += `<path d="${sb}" ${tr(1.8)}/>`;
+  switch (o.boca) {
+    case "sorriso": s += `<path d="M${n1(x - 5 * k)} ${n1(my)}q${n1(5 * k)} ${n1(5 * k)} ${n1(10 * k)} 0" ${tr(1.6)}/>`; break;
+    case "risada":
+      s += `<path d="M${n1(x - 7 * k)} ${n1(my - 1 * k)}h${n1(14 * k)}a${n1(7 * k)} ${n1(6.5 * k)} 0 0 1 ${n1(-14 * k)} 0z" fill="${C.t}"/>` +
+           `<ellipse cx="${n1(x)}" cy="${n1(my + 3.4 * k)}" rx="${n1(3.4 * k)}" ry="${n1(1.9 * k)}" fill="${C.v}"/>`; break;
+    case "o": s += `<ellipse cx="${n1(x)}" cy="${n1(my + 1 * k)}" rx="${n1(2.6 * k)}" ry="${n1(3.4 * k)}" fill="${C.t}"/>`; break;
+    case "tremida": s += `<path d="M${n1(x - 6 * k)} ${n1(my + 1 * k)}l${n1(2 * k)} ${n1(-2 * k)}l${n1(2 * k)} ${n1(2 * k)}l${n1(2 * k)} ${n1(-2 * k)}l${n1(2 * k)} ${n1(2 * k)}l${n1(2 * k)} ${n1(-2 * k)}" ${tr(1.4)}/>`; break;
+    case "dentes":
+      s += `<rect x="${n1(x - 7 * k)}" y="${n1(my - 2 * k)}" width="${n1(14 * k)}" height="${n1(6 * k)}" rx="${n1(2 * k)}" fill="#fff" ${tr(1).replace('fill="none"', "")}/>` +
+           `<path d="M${n1(x - 7 * k)} ${n1(my + 1 * k)}h${n1(14 * k)}M${n1(x - 2.5 * k)} ${n1(my - 2 * k)}v${n1(6 * k)}M${n1(x + 2.5 * k)} ${n1(my - 2 * k)}v${n1(6 * k)}" ${tr(0.8)}/>`; break;
+    case "lado": s += `<path d="M${n1(x - 3 * k)} ${n1(my + 1.5 * k)}q${n1(5 * k)} ${n1(2.5 * k)} ${n1(8.5 * k)} ${n1(-3 * k)}" ${tr(1.6)}/>`; break;
+    default: s += `<path d="M${n1(x - 4 * k)} ${n1(my + 1 * k)}h${n1(8 * k)}" ${tr(1.6)}/>`;
+  }
+  const extras = o.extras || [];
+  if (extras.includes("blush")) {
+    s += `<ellipse cx="${n1(x - 0.62 * r)}" cy="${n1(y + 0.28 * r)}" rx="${n1(3.2 * k)}" ry="${n1(2 * k)}" fill="${BOCHECHA}" opacity=".75"/>` +
+         `<ellipse cx="${n1(x + 0.62 * r)}" cy="${n1(y + 0.28 * r)}" rx="${n1(3.2 * k)}" ry="${n1(2 * k)}" fill="${BOCHECHA}" opacity=".75"/>`;
+  }
+  if (extras.includes("suor")) {
+    const gota = (gx, gy, e) => `<path d="M${n1(gx)} ${n1(gy)}q${n1(3 * e)} ${n1(4.5 * e)} 0 ${n1(7 * e)}q${n1(-3 * e)} ${n1(-2.5 * e)} 0 ${n1(-7 * e)}z" fill="${GOTA}"/>`;
+    s += gota(x + 1.02 * r, y - 0.75 * r, k) + gota(x + 1.3 * r, y - 0.2 * r, 0.75 * k) + gota(x - 1.12 * r, y - 0.55 * r, 0.8 * k);
+  }
+  return s;
+}
+
+function pessoa(x, y, r, o) {
+  const tipo = o.tipo, k = r / 16;
+  let s = "";
+  if (tipo === "noiva" && o.veu !== false) {
+    s += `<path d="M${n1(x)} ${n1(y - r - 2)}C${n1(x - 2.3 * r)} ${n1(y - r)} ${n1(x - 2.4 * r)} ${n1(y + 2.6 * r)} ${n1(x - 2 * r)} ${n1(y + 3.6 * r)}H${n1(x + 2 * r)}C${n1(x + 2.4 * r)} ${n1(y + 2.6 * r)} ${n1(x + 2.3 * r)} ${n1(y - r)} ${n1(x)} ${n1(y - r - 2)}z" fill="#fff" opacity=".9" stroke="${C.l}" stroke-width="1"/>`;
+  }
+  if (tipo === "noiva" || tipo === "convidada") {
+    s += `<rect x="${n1(x - r - 1.5)}" y="${n1(y - r - 1)}" width="${n1(2 * r + 3)}" height="${n1(2.15 * r)}" rx="${n1(r)}" fill="${CABELO}"/>`;
+  }
+  const corTronco = { noiva: "#fff", noivo: C.t, convidado: C.v, convidada: C.o, tia: C.vp }[tipo];
+  s += `<path d="M${n1(x - 1.75 * r)} ${n1(y + 3.8 * r)}V${n1(y + 1.9 * r)}Q${n1(x - 1.7 * r)} ${n1(y + 1.05 * r)} ${n1(x - 0.5 * r)} ${n1(y + r)}H${n1(x + 0.5 * r)}Q${n1(x + 1.7 * r)} ${n1(y + 1.05 * r)} ${n1(x + 1.75 * r)} ${n1(y + 1.9 * r)}V${n1(y + 3.8 * r)}z" fill="${corTronco}"${tipo === "noiva" ? ` stroke="${C.l}" stroke-width="1"` : ""}/>`;
+  if (tipo === "noivo") {
+    s += `<path d="M${n1(x - 0.45 * r)} ${n1(y + r)}L${n1(x)} ${n1(y + 2.1 * r)}L${n1(x + 0.45 * r)} ${n1(y + r)}z" fill="#fff"/>` +
+         `<path d="M${n1(x - 0.55 * r)} ${n1(y + 1.05 * r)}l${n1(0.55 * r)} ${n1(0.22 * r)}l${n1(-0.55 * r)} ${n1(0.22 * r)}zM${n1(x + 0.55 * r)} ${n1(y + 1.05 * r)}l${n1(-0.55 * r)} ${n1(0.22 * r)}l${n1(0.55 * r)} ${n1(0.22 * r)}z" fill="${C.v}"/>`;
+  }
+  if (tipo === "noiva") s += `<path d="M${n1(x - 0.9 * r)} ${n1(y + 1.15 * r)}q${n1(0.9 * r)} ${n1(0.7 * r)} ${n1(1.8 * r)} 0" stroke="${C.l}" stroke-width="1.2" fill="none"/>`;
+  s += `<rect x="${n1(x - 0.32 * r)}" y="${n1(y + 0.6 * r)}" width="${n1(0.64 * r)}" height="${n1(0.6 * r)}" fill="${PELE}"/>`;
+  s += `<circle cx="${n1(x)}" cy="${n1(y)}" r="${n1(r)}" fill="${PELE}"/>`;
+  if (tipo === "noivo" || tipo === "convidado") {
+    s += `<path d="M${n1(x - r)} ${n1(y - 0.15 * r)}C${n1(x - r)} ${n1(y - 1.35 * r)} ${n1(x + r)} ${n1(y - 1.35 * r)} ${n1(x + r)} ${n1(y - 0.15 * r)}C${n1(x + 0.55 * r)} ${n1(y - 0.75 * r)} ${n1(x - 0.4 * r)} ${n1(y - 0.95 * r)} ${n1(x - r)} ${n1(y - 0.15 * r)}z" fill="${CABELO}"/>`;
+  } else if (tipo === "noiva" || tipo === "convidada") {
+    s += `<path d="M${n1(x - r)} ${n1(y + 0.1 * r)}C${n1(x - r)} ${n1(y - 1.35 * r)} ${n1(x + r)} ${n1(y - 1.35 * r)} ${n1(x + r)} ${n1(y + 0.1 * r)}C${n1(x + 0.75 * r)} ${n1(y - 0.55 * r)} ${n1(x - 0.1 * r)} ${n1(y - 0.8 * r)} ${n1(x - r)} ${n1(y + 0.1 * r)}z" fill="${CABELO}"/>`;
+  } else if (tipo === "tia") {
+    s += `<circle cx="${n1(x)}" cy="${n1(y - 1.12 * r)}" r="${n1(0.48 * r)}" fill="${GRISALHO}"/>` +
+         `<path d="M${n1(x - r)} ${n1(y)}C${n1(x - r)} ${n1(y - 1.35 * r)} ${n1(x + r)} ${n1(y - 1.35 * r)} ${n1(x + r)} ${n1(y)}C${n1(x + 0.5 * r)} ${n1(y - 0.65 * r)} ${n1(x - 0.5 * r)} ${n1(y - 0.65 * r)} ${n1(x - r)} ${n1(y)}z" fill="${GRISALHO}"/>`;
+  }
+  if (tipo === "noiva" && o.veu !== false) {
+    for (const [px, py] of [[-0.6, -0.86], [0, -1.02], [0.6, -0.86]]) s += `<circle cx="${n1(x + px * r)}" cy="${n1(y + py * r)}" r="${n1(1.9 * k)}" fill="${C.oc}"/>`;
+  }
+  if (o.rolinhos) {
+    [[-0.75, -0.75, C.v], [-0.25, -1.05, C.oc], [0.3, -1.05, C.v], [0.78, -0.72, C.oc]].forEach(([px, py, cor]) => {
+      s += `<rect x="${n1(x + px * r - 3.4 * k)}" y="${n1(y + py * r - 3.4 * k)}" width="${n1(6.8 * k)}" height="${n1(6.8 * k)}" rx="${n1(2.4 * k)}" fill="${cor}"/>`;
+    });
+  }
+  if (o.coroa) {
+    s += `<path d="M${n1(x - 0.75 * r)} ${n1(y - 0.82 * r)}l${n1(0.12 * r)} ${n1(-0.7 * r)}l${n1(0.33 * r)} ${n1(0.38 * r)}l${n1(0.3 * r)} ${n1(-0.55 * r)}l${n1(0.3 * r)} ${n1(0.55 * r)}l${n1(0.33 * r)} ${n1(-0.38 * r)}l${n1(0.12 * r)} ${n1(0.7 * r)}z" fill="${C.o}"/>`;
+  }
+  return s + rosto(x, y, r, o);
+}
+
+const fundo = (cor) => `<rect width="160" height="120" fill="${cor || C.n}"/>`;
+const nota = (x, y, cor) => `<ellipse cx="${x}" cy="${y}" rx="4.2" ry="3.2" fill="${cor}" transform="rotate(-20 ${x} ${y})"/><path d="M${x + 3.6} ${y - 1}v-14l6 3" stroke="${cor}" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+const brilho = (x, y, e) => `<path d="M${x} ${y - 6 * e}l${1.6 * e} ${4.4 * e} ${4.4 * e} ${1.6 * e}-${4.4 * e} ${1.6 * e}-${1.6 * e} ${4.4 * e}-${1.6 * e}-${4.4 * e}-${4.4 * e}-${1.6 * e} ${4.4 * e}-${1.6 * e}z" fill="${C.o}"/>`;
+const movimento = (x, y) => `<path d="M${x} ${y}h-14M${x + 4} ${y + 9}h-18M${x} ${y + 18}h-12" stroke="${C.o}" stroke-width="2.5" stroke-linecap="round"/>`;
+const BUQUE = `<path d="M62 70l18 40 18-40z" fill="${C.oc}"/><path d="M76 70l4 28M84 70l-4 28M80 68v30" stroke="${C.o}" stroke-width="2" fill="none"/>` +
+  `<circle cx="66" cy="58" r="12" fill="${C.v}"/><circle cx="94" cy="58" r="12" fill="${C.v}"/><circle cx="80" cy="46" r="13" fill="${C.vp}"/>` +
+  `<circle cx="80" cy="66" r="10" fill="#fff"/><circle cx="66" cy="42" r="8" fill="#fff"/><circle cx="95" cy="41" r="8" fill="#fff"/>` +
+  `<circle cx="66" cy="58" r="3" fill="${C.o}"/><circle cx="94" cy="58" r="3" fill="${C.o}"/><circle cx="80" cy="46" r="3.5" fill="${C.oc}"/>`;
+const buque = (x, y, e, rot) => `<g transform="translate(${x} ${y}) rotate(${rot || 0}) scale(${e}) translate(-80 -70)">${BUQUE}</g>`;
+const relogio = (x, y, r, h, m) => {
+  const ang = (g) => (g - 90) * Math.PI / 180;
+  const hx = x + Math.cos(ang(h)) * r * 0.45, hy = y + Math.sin(ang(h)) * r * 0.45;
+  const mx = x + Math.cos(ang(m)) * r * 0.7, my = y + Math.sin(ang(m)) * r * 0.7;
+  return `<circle cx="${x}" cy="${y}" r="${r}" fill="${C.v}"/><circle cx="${x}" cy="${y}" r="${n1(r * 0.78)}" fill="#fff"/>` +
+    `<path d="M${x} ${y}L${n1(hx)} ${n1(hy)}M${x} ${y}L${n1(mx)} ${n1(my)}" stroke="${C.t}" stroke-width="2.2" stroke-linecap="round"/><circle cx="${x}" cy="${y}" r="1.8" fill="${C.t}"/>`;
+};
+
+const FIGURAS = {
+  taxa: () => fundo() +
+    pessoa(60, 58, 16, { tipo: "convidado", olhos: "lado", olhar: 1, sobr: "levantada", boca: "lado" }) +
+    `<ellipse cx="114" cy="84" rx="22" ry="6" fill="#fff" stroke="${C.l}" stroke-width="1.5"/>` +
+    [[100, 78], [108, 78], [116, 78], [124, 78], [104, 71], [112, 71], [120, 71], [108, 64], [116, 64], [112, 57]]
+      .map(([bx, by]) => `<circle cx="${bx}" cy="${by}" r="3.8" fill="${C.t}"/><circle cx="${bx - 1}" cy="${by - 1.4}" r=".8" fill="${C.oc}"/>`).join("") +
+    braco(78, 80, 98, 84, C.v, 16) +
+    legenda("EU VIM PELA COMIDA", "E PELOS NOIVOS, CLARO"),
+  janela: () => fundo() +
+    `<rect x="100" y="28" width="42" height="64" rx="19" fill="#fff" stroke="${C.l}" stroke-width="1.5"/>` +
+    `<rect x="106" y="34" width="30" height="52" rx="14" fill="${C.oc}"/><circle cx="126" cy="48" r="5" fill="${C.v}"/>` +
+    `<path d="M110 74a5 5 0 0 1 8-3a6 6 0 0 1 11 2a4 4 0 0 1 1 8h-18a4 4 0 0 1-2-7z" fill="#fff"/>` +
+    pessoa(56, 60, 16, { tipo: "noiva", olhos: "ponto", sobr: "brava", boca: "tremida" }) +
+    braco(72, 82, 101, 64, "#fff", 16) +
+    legenda("A JANELINHA É MINHA", "NEM PENSE NISSO"),
+  dj: () => fundo(C.oc) +
+    braco(68, 82, 52, 46, C.o, 15) + braco(92, 82, 108, 46, C.o, 15) +
+    pessoa(80, 60, 15, { tipo: "convidada", olhos: "feliz", boca: "risada", extras: ["blush"] }) +
+    nota(30, 64, C.v) + nota(126, 70, C.v) + nota(38, 40, C.vp) +
+    `<circle cx="134" cy="38" r="12" fill="${C.v}"/><text class="tx" x="134" y="43" text-anchor="middle" font-size="13" fill="#fff">3X</text>` +
+    legenda("TOCA DE NOVO, DJ", "PELA TERCEIRA VEZ"),
+  ressaca: () => fundo() +
+    pessoa(66, 60, 16, { tipo: "convidado", olhos: "oculos", boca: "tremida", extras: ["suor"] }) +
+    `<path d="M52 44c0-9 28-9 28 0c0 4-28 4-28 0z" fill="#fff" stroke="${C.ts}" stroke-width="1.2"/><circle cx="66" cy="36" r="3" fill="#fff" stroke="${C.ts}" stroke-width="1.2"/>` +
+    `<path d="M104 62h20l-3 32h-14z" fill="#fff" stroke="${C.ts}" stroke-width="1.4"/><path d="M106 72h16l-2 22h-12z" fill="${C.oc}" opacity=".8"/>` +
+    `<circle cx="111" cy="84" r="1.6" fill="#fff"/><circle cx="116" cy="78" r="1.3" fill="#fff"/><circle cx="113" cy="90" r="1.2" fill="#fff"/>` +
+    braco(82, 82, 102, 84, C.v, 16) +
+    legenda("EU NO DIA SEGUINTE", "OPEN BAR 1 X 0 EU"),
+  salao: () => fundo() +
+    pessoa(58, 62, 16, { tipo: "noiva", veu: false, rolinhos: true, olhos: "fechado", boca: "sorriso", extras: ["blush"] }) +
+    relogio(118, 62, 20, 117, 330) +
+    `<path d="M140 44l6-6M146 58h8M140 80l6 6" stroke="${C.o}" stroke-width="2.5" stroke-linecap="round"/>` +
+    legenda("SÓ MAIS 5 MINUTINHOS", "A NOIVA ÀS 15H55"),
+  relogio: () => fundo() +
+    movimento(30, 52) +
+    pessoa(68, 60, 16, { tipo: "noivo", olhos: "arregalado", sobr: "preocupada", boca: "dentes", extras: ["suor"] }) +
+    relogio(126, 50, 14, 120, 6) +
+    legenda("O NOIVO ÀS 16H01", "CHEGANDO, JURO!"),
+  mala: () => fundo() +
+    pessoa(48, 60, 15, { tipo: "noiva", olhos: "feliz", boca: "risada", extras: ["blush"] }) +
+    `<rect x="90" y="46" width="60" height="13" rx="5" fill="${C.vp}" transform="rotate(-16 90 59)"/>` +
+    `<path d="M104 58l6-20h9l6 20z" fill="#fff" stroke="${C.l}"/><path d="M128 56c4-9 11-12 17-8l-2 5c-5 0-9 2-11 6z" fill="${C.o}"/>` +
+    `<path d="M96 52c3-7 9-9 12-3" stroke="${C.v}" stroke-width="3" fill="none" stroke-linecap="round"/>` +
+    `<path d="M98 34l-4-5M140 36l5-5M120 28v-6" stroke="${C.o}" stroke-width="2.5" stroke-linecap="round"/>` +
+    `<rect x="86" y="58" width="64" height="40" rx="7" fill="${C.v}"/><rect x="100" y="58" width="6" height="40" fill="${C.o}"/><rect x="130" y="58" width="6" height="40" fill="${C.o}"/>` +
+    `<rect x="104" y="72" width="30" height="13" rx="3" fill="#fff"/><text class="tx" x="119" y="82" text-anchor="middle" font-size="9" fill="${C.v}">+23 KG</text>` +
+    legenda("SÓ LEVEI O ESSENCIAL", "(SÓ 3 MALAS)"),
+  prioridade: () => fundo() +
+    braco(70, 84, 98, 54, C.o, 15) + braco(46, 84, 90, 48, C.o, 15) +
+    pessoa(58, 66, 15, { tipo: "convidada", olhos: "ponto", sobr: "brava", boca: "dentes" }) +
+    `<path d="M104 44h-10M106 52h-12M102 36h-8" stroke="${C.o}" stroke-width="2.5" stroke-linecap="round"/>` +
+    buque(126, 44, 0.42, 18) +
+    legenda("ESSE BUQUÊ É MEU", "SAI DA FRENTE"),
+  namorada: () => fundo() +
+    `<path d="M14 40h14M10 50h18M14 60h12" stroke="${C.o}" stroke-width="2.5" stroke-linecap="round"/>` +
+    buque(46, 48, 0.42, -24) +
+    pessoa(104, 60, 16, { tipo: "convidado", olhos: "arregalado", olhar: -1, sobr: "preocupada", boca: "o", extras: ["suor"] }) +
+    legenda("QUANDO O BUQUÊ VOA", "NA DIREÇÃO DELA"),
+  valsa: () => fundo() +
+    pessoa(54, 58, 16, { tipo: "noivo", olhos: "arregalado", olharY: 1, sobr: "preocupada", boca: "dentes", extras: ["suor"] }) +
+    `<path d="M104 86c4-10 8-14 12-14M120 64c6 4 10 6 14 6" stroke="${C.o}" stroke-width="2" stroke-dasharray="3 5" fill="none" stroke-linecap="round"/>` +
+    `<ellipse cx="100" cy="94" rx="5" ry="9" fill="${C.t}" transform="rotate(-12 100 94)"/><ellipse cx="118" cy="62" rx="5" ry="9" fill="${C.t}" transform="rotate(10 118 62)"/><ellipse cx="140" cy="76" rx="5" ry="9" fill="${C.t}" transform="rotate(-6 140 76)"/>` +
+    `<circle cx="90" cy="80" r="6" fill="${C.v}"/><text class="tx" x="90" y="83.5" text-anchor="middle" font-size="9" fill="#fff">1</text>` +
+    `<circle cx="128" cy="50" r="6" fill="${C.v}"/><text class="tx" x="128" y="53.5" text-anchor="middle" font-size="9" fill="#fff">2</text>` +
+    `<circle cx="146" cy="94" r="6" fill="${C.o}"/><text class="tx" x="146" y="97.5" text-anchor="middle" font-size="9" fill="#fff">?</text>` +
+    legenda("O NOIVO NA VALSA", "1, 2, 3... E AGORA?"),
+  calma: () => fundo() +
+    pessoa(64, 58, 16, { tipo: "noiva", olhos: "fechado", boca: "o", extras: ["blush"] }) +
+    `<circle cx="96" cy="68" r="4" fill="#fff" stroke="${C.ts}" stroke-width="1"/><circle cx="108" cy="62" r="6" fill="#fff" stroke="${C.ts}" stroke-width="1"/><circle cx="124" cy="54" r="9" fill="#fff" stroke="${C.ts}" stroke-width="1"/>` +
+    brilho(130, 82, 0.8) + brilho(34, 40, 0.7) +
+    legenda("CALMA, CAROL", "INSPIRA... EXPIRA..."),
+  casa: () => fundo() +
+    `<rect x="132" y="38" width="7" height="14" fill="${C.vp}"/><path d="M100 64l26-26 26 26z" fill="${C.v}"/><rect x="106" y="62" width="40" height="34" fill="#fff" stroke="${C.l}"/>` +
+    `<rect x="120" y="74" width="12" height="22" rx="1.5" fill="${C.o}"/><rect x="110" y="68" width="8" height="8" fill="${C.oc}"/><rect x="134" y="68" width="8" height="8" fill="${C.oc}"/>` +
+    pessoa(40, 64, 13, { tipo: "noiva", olhos: "feliz", boca: "risada" }) +
+    pessoa(72, 64, 13, { tipo: "noivo", olhos: "feliz", boca: "sorriso" }) +
+    legenda("LAR, DOCE LAR", "SÓ FALTA MOBILIAR"),
+  passaporte: () => fundo() +
+    `<path d="M72 34h16" stroke="${C.o}" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/><path fill="${C.v}" transform="translate(96 34) scale(.7)" d="M12 0L4 -1.6L-1 -9L-3.6 -9L0 -1.6L-6 -1.6L-8.6 -4.6L-10 -4.6L-8.6 0L-10 4.6L-8.6 4.6L-6 1.6L0 1.6L-3.6 9L-1 9L4 1.6Z"/>` +
+    pessoa(50, 62, 14, { tipo: "noiva", olhos: "oculos", boca: "sorriso" }) +
+    pessoa(98, 62, 14, { tipo: "noivo", olhos: "oculos", boca: "sorriso" }) +
+    braco(112, 82, 128, 60, C.t, 14) +
+    `<rect x="122" y="40" width="16" height="22" rx="2" fill="${C.v}" transform="rotate(12 130 51)"/><circle cx="130" cy="50" r="3.5" fill="none" stroke="${C.oc}" stroke-width="1.2"/>` +
+    legenda("PARTIU LUA DE MEL", "COM A SUA AJUDA"),
+  patrocinador: () => fundo() +
+    [[104, 30, -20], [124, 40, 15], [140, 58, -8], [114, 62, 25], [132, 82, -15], [100, 86, 10]]
+      .map(([nx, ny, rot]) => `<g transform="rotate(${rot} ${nx} ${ny})"><rect x="${nx - 9}" y="${ny - 5}" width="18" height="10" rx="1.5" fill="${C.oc}" stroke="${C.o}" stroke-width="1"/><text class="tx" x="${nx}" y="${ny + 3}" text-anchor="middle" font-size="7" fill="${C.o}">R$</text></g>`).join("") +
+    braco(80, 82, 100, 44, C.v, 16) +
+    pessoa(64, 60, 16, { tipo: "convidado", olhos: "oculos", boca: "lado", coroa: true }) +
+    legenda("PATROCINADOR OFICIAL", "DA LUA DE MEL"),
+  primeira: () => fundo() +
+    `<rect x="34" y="40" width="40" height="76" rx="12" fill="${C.v}"/><rect x="86" y="40" width="40" height="76" rx="12" fill="${C.v}"/>` +
+    `<rect x="40" y="44" width="28" height="8" rx="3" fill="#fff"/><rect x="92" y="44" width="28" height="8" rx="3" fill="#fff"/>` +
+    pessoa(54, 66, 13, { tipo: "noiva", veu: false, olhos: "oculos", boca: "sorriso" }) +
+    pessoa(106, 66, 13, { tipo: "noivo", olhos: "oculos", boca: "sorriso" }) +
+    braco(66, 84, 76, 62, "#fff", 13) + braco(94, 84, 84, 62, C.t, 13) +
+    `<path d="M72 46h8l-1 9a3 3 0 0 1-6 0z" fill="${C.oc}"/><path d="M76 58v4" stroke="${C.o}" stroke-width="1.5"/>` +
+    `<path d="M80 46h8l-1 9a3 3 0 0 1-6 0z" fill="${C.oc}"/><path d="M84 58v4" stroke="${C.o}" stroke-width="1.5"/>` +
+    brilho(80, 36, 0.7) +
+    legenda("PRIMEIRA CLASSE", "A GENTE MERECE"),
+  filhos: () => fundo() +
+    `<path d="M54 24h66a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H70l-10 8 2-8h-8a6 6 0 0 1-6-6V30a6 6 0 0 1 6-6z" fill="#fff" stroke="${C.t}" stroke-width="1.5"/>` +
+    `<text class="tx" x="87" y="41" text-anchor="middle" font-size="13" fill="${C.t}">E OS FILHOS?</text>` +
+    pessoa(36, 66, 15, { tipo: "tia", olhos: "ponto", armacao: true, boca: "lado" }) +
+    pessoa(100, 74, 12, { tipo: "noiva", olhos: "arregalado", olhar: -1, boca: "dentes", extras: ["suor"] }) +
+    pessoa(130, 74, 12, { tipo: "noivo", olhos: "arregalado", olhar: -1, boca: "dentes" }) +
+    legenda("", "SÓ DAQUI A UNS ANOS, TIA"),
+  livre: () => fundo() +
+    pessoa(58, 60, 16, { tipo: "convidada", olhos: "lado", olhar: 1, sobr: "levantada", boca: "lado" }) +
+    braco(74, 82, 100, 82, C.o, 16) +
+    `<path d="M118 66c-6-8-15-7-13 0 1 3 8 1 13 0zM118 66c6-8 15-7 13 0-1 3-8 1-13 0z" fill="${C.o}"/>` +
+    `<rect x="98" y="66" width="40" height="10" rx="2" fill="${C.vp}"/><rect x="102" y="76" width="32" height="24" rx="2" fill="${C.v}"/><rect x="115" y="66" width="6" height="34" fill="${C.o}"/>` +
+    `<text class="tx" x="146" y="64" font-size="18" fill="${C.v}">?</text>` +
+    legenda("SURPREENDA A GENTE", "VALOR LIVRE")
+};
+
+const $ = (id) => document.getElementById(id);
+
+function figuraHTML(p) {
+  if (p.foto) {
+    const img = document.createElement("img");
+    img.src = p.foto;
+    img.alt = "";
+    img.loading = "lazy";
+    return img;
+  }
+  const tmp = document.createElement("div");
+  const desenho = FIGURAS[p.figura] || FIGURAS.livre;
+  tmp.innerHTML = '<svg viewBox="0 0 160 120" aria-hidden="true" focusable="false">' + desenho() + "</svg>";
+  return tmp.firstChild;
+}
+
+const reais = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL", minimumFractionDigits: Number.isInteger(v) ? 0 : 2 });
+const valorCopia = (v) => v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function lerValorLivre() {
+  const t = $("valor-livre").value.replace(/[^\d,.]/g, "").replace(/\.(?=\d{3}(\D|$))/g, "").replace(",", ".");
+  const v = Math.round(parseFloat(t) * 100) / 100;
+  return isFinite(v) ? v : NaN;
+}
+
+function numeroWhats() {
+  let n = (CONFIG.whatsapp || "").replace(/\D/g, "");
+  if (!n) return "";
+  if (n.length <= 11) n = "55" + n;
+  return n;
+}
+
+function avisar(texto) {
+  const el = $("aviso");
+  el.textContent = texto;
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.textContent = ""; }, 4500);
+}
+
+async function copiar(texto, mensagemOk) {
+  try {
+    await navigator.clipboard.writeText(texto);
+    avisar(mensagemOk);
+  } catch (e) {
+    avisar("Não deu para copiar automaticamente. Selecione o texto e copie à mão.");
+  }
+}
+
+let atual = -1;
+let aviso = "";
+
+function desenharCotas() {
+  const ul = $("cotas");
+  ul.innerHTML = "";
+  PRESENTES.forEach((p, i) => {
+    const li = document.createElement("li");
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "cota";
+    b.id = "cota-" + i;
+    const fig = document.createElement("span");
+    fig.className = "cota-figura";
+    fig.appendChild(figuraHTML(p));
+    const texto = document.createElement("span");
+    texto.className = "cota-texto";
+    const nome = document.createElement("span");
+    nome.className = "cota-nome";
+    nome.textContent = p.nome;
+    const rodape = document.createElement("span");
+    rodape.className = "cota-rodape";
+    const valor = document.createElement("span");
+    valor.className = "cota-valor";
+    valor.textContent = p.valor == null ? "A partir de " + reais(VALOR_MINIMO) : reais(p.valor);
+    const acao = document.createElement("span");
+    acao.className = "cota-acao";
+    acao.textContent = "Escolher";
+    rodape.append(valor, acao);
+    texto.append(nome, rodape);
+    b.append(fig, texto);
+    b.addEventListener("click", () => abrir(i));
+    li.appendChild(b);
+    ul.appendChild(li);
+  });
+}
+
+function abrir(i) {
+  const p = PRESENTES[i];
+  if (!p) return;
+  atual = i;
+  $("dlg-titulo").textContent = p.nome;
+  const fig = $("dlg-figura");
+  fig.innerHTML = "";
+  fig.appendChild(figuraHTML(p));
+  $("bloco-valor").hidden = p.valor == null;
+  $("grupo-valor-livre").hidden = p.valor != null;
+  if (p.valor != null) $("dlg-valor").textContent = reais(p.valor);
+  $("erro").hidden = true;
+  $("aviso").textContent = "";
+  atualizarAviso();
+  const d = $("dialogo");
+  if (typeof d.showModal === "function") d.showModal();
+  else d.setAttribute("open", "");
+}
+
+function fechar() {
+  const d = $("dialogo");
+  if (typeof d.close === "function") d.close();
+  else d.removeAttribute("open");
+}
+
+function atualizarAviso() {
+  const p = PRESENTES[atual];
+  if (!p) return;
+  const nome = $("nome").value.trim();
+  const recado = $("recado").value.trim();
+  let m = "Oi, Anne Caroline e Marcos! Aqui é " + (nome || "[seu nome]") + ". ";
+  if (p.valor == null) {
+    const v = lerValorLivre();
+    m += v >= VALOR_MINIMO ? "Fiz um Pix de " + reais(v) + " de presente para vocês." : "Fiz um Pix de presente para vocês.";
+  } else {
+    m += "Fiz um Pix de " + reais(p.valor) + " para o presente \"" + p.nome + "\".";
+  }
+  if (recado) m += "\n\nRecado: " + recado;
+  m = m.replace(/ /g, " ");
+  aviso = m;
+  const n = numeroWhats();
+  if (n) $("avisar-whats").href = "https://wa.me/" + n + "?text=" + encodeURIComponent(m);
+}
+
+function validar(e) {
+  const p = PRESENTES[atual];
+  const erro = $("erro");
+  let campo = null;
+  if (p && p.valor == null && !(lerValorLivre() >= VALOR_MINIMO)) {
+    erro.textContent = "O presente começa em " + reais(VALOR_MINIMO) + ". Escreva um valor a partir disso.";
+    campo = $("valor-livre");
+  } else if (!$("nome").value.trim()) {
+    erro.textContent = "Escreva seu nome para a gente saber quem mandou o presente.";
+    campo = $("nome");
+  }
+  if (!campo) return true;
+  e.preventDefault();
+  erro.hidden = false;
+  campo.focus();
+  return false;
+}
+
+function start(saved) {
+  if (typeof PRESENTES === "undefined" || typeof CONFIG === "undefined") {
+    $("sem-dados").hidden = false;
+    return;
+  }
+  $("dica-valor-livre").textContent = "Valor mínimo de " + reais(VALOR_MINIMO) + ".";
+  if (CONFIG.pix) {
+    $("pix-chave").textContent = CONFIG.pix;
+  } else {
+    $("pix-chave").classList.add("vazia");
+    $("copiar-pix").hidden = true;
+  }
+  if (!numeroWhats()) {
+    $("avisar-whats").hidden = true;
+    $("dica-aviso").textContent = "Depois de fazer o Pix, copie o aviso e mande para os noivos no WhatsApp.";
+  }
+  desenharCotas();
+
+  $("fechar").addEventListener("click", fechar);
+  $("dialogo").addEventListener("click", (e) => { if (e.target === $("dialogo")) fechar(); });
+  $("dialogo").addEventListener("close", () => {
+    const b = $("cota-" + atual);
+    if (b) b.focus();
+  });
+  $("copiar-pix").addEventListener("click", () => copiar(CONFIG.pix, "Chave Pix copiada."));
+  $("copiar-valor").addEventListener("click", () => {
+    const p = PRESENTES[atual];
+    if (p && p.valor != null) copiar(valorCopia(p.valor), "Valor copiado.");
+  });
+  ["nome", "recado", "valor-livre"].forEach((id) => $(id).addEventListener("input", () => {
+    $("erro").hidden = true;
+    atualizarAviso();
+  }));
+  $("avisar-whats").addEventListener("click", validar);
+  $("copiar-aviso").addEventListener("click", (e) => {
+    if (validar(e)) copiar(aviso, "Aviso copiado. Agora é só colar no WhatsApp.");
+  });
+
+  const s = saved && saved.presente;
+  if (s) {
+    $("nome").value = s.nome || "";
+    $("recado").value = s.recado || "";
+    $("valor-livre").value = s.valorLivre || "";
+  }
+}
+
+window.claude?.hot?.snapshot?.(() => ({
+  presente: { nome: $("nome").value, recado: $("recado").value, valorLivre: $("valor-livre").value }
+}));
+window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+</script>
+</body>
+</html>
