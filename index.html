@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Casamento de Anne Caroline e Marcos</title>
+<meta name="description" content="Anne Caroline e Marcos vão se casar no dia 20 de fevereiro de 2028, no Lounge Conceito, em Caucaia (CE).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: capa vermelha com o cartão de embarque como peça central; seções em papel branco com título à esquerda e conteúdo à direita; fecho vermelho com o check-in */
+  color-scheme: light;
+  --vermelho: #9B1C24;
+  --vermelho-profundo: #7A121A;
+  --ouro: #B0843A;
+  --ouro-claro: #E0C27E;
+  --papel: #FFFFFF;
+  --nevoa: #F8F1EE;
+  --tinta: #2B1517;
+  --tinta-suave: #6E5254;
+  --linha: #EADBD5;
+  --display: "Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
+  --texto: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --bilhete: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --listra: repeating-linear-gradient(-45deg, #9B1C24 0 12px, #FFFFFF 12px 22px, #B0843A 22px 34px, #FFFFFF 34px 44px);
+  --foco: var(--vermelho);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--texto);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 4px; }
+p { margin: 0; }
+
+.listra { height: 12px; background: var(--listra); }
+
+/* Botões */
+.botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+.botao {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--texto); font-weight: 600; font-size: 1rem; line-height: 1.2;
+  padding: 13px 22px; border-radius: 999px;
+  border: 1.5px solid var(--vermelho); background: var(--vermelho); color: var(--papel);
+  text-decoration: none; cursor: pointer;
+}
+.botao:hover { background: var(--vermelho-profundo); border-color: var(--vermelho-profundo); }
+.botao-contorno { background: transparent; color: var(--vermelho); }
+.botao-contorno:hover { background: var(--vermelho); border-color: var(--vermelho); color: var(--papel); }
+.botao-link {
+  background: none; border: 0; padding: 13px 6px; font: inherit; font-weight: 600;
+  color: var(--tinta-suave); text-decoration: underline; cursor: pointer;
+}
+.aviso { min-height: 1.5em; font-size: .95rem; color: var(--tinta-suave); }
+.dica { font-size: .92rem; color: var(--tinta-suave); }
+
+/* Capa */
+.capa { background: var(--vermelho-profundo); color: var(--papel); padding-bottom: clamp(40px, 7vw, 72px); --foco: var(--ouro-claro); }
+.capa-nav {
+  max-width: 1080px; margin: 0 auto; padding: 18px clamp(16px, 4vw, 32px);
+  display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: space-between;
+}
+.monograma { font-family: var(--display); font-style: italic; font-size: 1.6rem; line-height: 1; text-decoration: none; color: var(--ouro-claro); }
+.capa-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 24px; }
+.capa-nav ul a { font-weight: 500; text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 2px; }
+.capa-nav ul a:hover { border-bottom-color: var(--ouro-claro); }
+
+.bilhete-wrap { max-width: 1000px; margin: clamp(14px, 3vw, 32px) auto 0; padding: 0 clamp(16px, 4vw, 32px); }
+.bilhete {
+  display: grid; grid-template-columns: minmax(0, 1fr) 250px;
+  background: var(--papel); color: var(--tinta);
+  border-radius: 14px; overflow: hidden; position: relative;
+  box-shadow: 0 34px 60px -34px rgba(30, 0, 4, .7);
+  --foco: var(--vermelho);
+}
+.bilhete-faixa {
+  background: var(--vermelho); color: var(--papel);
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 11px 28px;
+  font-family: var(--bilhete); font-weight: 600; font-size: .92rem; letter-spacing: .1em; text-transform: uppercase;
+}
+.bilhete-faixa .cia { color: var(--ouro-claro); }
+.bilhete-principal { padding-bottom: 30px; min-width: 0; }
+.rota { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: 10px; padding: 26px 28px 0; }
+.porto { display: flex; flex-direction: column; align-items: flex-start; }
+.porto-chegada { align-items: flex-end; }
+.codigo {
+  font-family: var(--bilhete); font-weight: 700; line-height: .82; letter-spacing: .01em;
+  font-size: clamp(3.1rem, 9vw, 5.6rem); color: var(--vermelho);
+}
+.porto-nome { font-family: var(--bilhete); font-weight: 500; text-transform: uppercase; letter-spacing: .14em; font-size: .85rem; color: var(--tinta-suave); margin-top: 8px; }
+.trajeto { display: block; width: 100%; height: auto; margin-bottom: 18px; overflow: visible; }
+.trajeto .arco { fill: none; stroke: var(--ouro); stroke-width: 1.6; stroke-dasharray: 2 5; stroke-linecap: round; }
+.trajeto .ponto { fill: var(--ouro); }
+.trajeto .aviao { fill: var(--vermelho); }
+
+.bilhete h1 {
+  font-family: var(--display); font-style: italic; font-weight: 500;
+  font-size: clamp(2.5rem, 6.4vw, 4.4rem); line-height: 1; letter-spacing: -.01em;
+  margin: 22px 28px 0; text-wrap: balance;
+}
+.campos {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 20px;
+  margin: 24px 28px 0; padding-top: 20px; border-top: 1px solid var(--linha);
+}
+.campos div { min-width: 0; }
+.campos dt, .resultado-campos dt {
+  font-family: var(--bilhete); font-weight: 500; text-transform: uppercase; letter-spacing: .13em;
+  font-size: .78rem; color: var(--tinta-suave);
+}
+.campos dd, .resultado-campos dd {
+  margin: 2px 0 0; font-family: var(--bilhete); font-weight: 600; font-size: 1.35rem; line-height: 1.2;
+}
+
+.bilhete-canhoto { border-left: 2px dashed var(--linha); position: relative; display: flex; flex-direction: column; padding-bottom: 26px; min-width: 0; }
+.bilhete-canhoto::before, .bilhete-canhoto::after {
+  content: ""; position: absolute; left: -15px; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--vermelho-profundo);
+}
+.bilhete-canhoto::before { top: -14px; }
+.bilhete-canhoto::after { bottom: -14px; }
+.bilhete-canhoto .bilhete-faixa { padding-left: 24px; padding-right: 24px; }
+.campos-canhoto { grid-template-columns: 1fr; margin: 22px 24px 0; padding-top: 0; border-top: 0; }
+.codigo-barras { display: block; width: auto; height: 46px; margin: 22px 24px 0; fill: var(--tinta); }
+.bilhete-canhoto .botao { margin: 20px 24px 0; }
+
+.capa-rodape {
+  max-width: 1000px; margin: 28px auto 0; padding: 0 clamp(16px, 4vw, 32px);
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 24px;
+}
+.contagem { font-size: 1.15rem; }
+.contagem strong {
+  font-family: var(--display); font-weight: 500; font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1;
+  color: var(--ouro-claro); margin: 0 4px; font-variant-numeric: lining-nums tabular-nums;
+}
+.capa-local { color: #F2DADA; }
+
+/* Seções */
+.secao { padding: clamp(56px, 9vw, 104px) clamp(16px, 4vw, 32px); }
+.secao-nevoa { background: var(--nevoa); }
+.secao-grade {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 28px clamp(32px, 6vw, 80px);
+}
+.secao h2 {
+  font-family: var(--display); font-weight: 500; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.05;
+  margin: 0; color: var(--vermelho); text-wrap: balance;
+}
+.secao h2::after { content: ""; display: block; width: 48px; height: 3px; background: var(--ouro); margin-top: 18px; }
+.conteudo { display: flex; flex-direction: column; gap: 22px; max-width: 62ch; min-width: 0; }
+
+.data-grande { font-family: var(--display); font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.2; }
+.escalas { list-style: none; margin: 6px 0 0 8px; padding: 0; }
+.escalas li {
+  position: relative; padding: 0 0 26px 30px; border-left: 2px dotted var(--ouro);
+  display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: 2px 20px;
+}
+.escalas li:last-child { border-left-color: transparent; padding-bottom: 0; }
+.escalas li::before {
+  content: ""; position: absolute; left: -11px; top: 5px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--papel); border: 3px solid var(--vermelho);
+}
+.escala-hora { font-family: var(--bilhete); font-weight: 600; font-size: 1.15rem; color: var(--vermelho); grid-row: span 2; padding-top: 2px; }
+.escala-nome { font-family: var(--display); font-size: 1.5rem; line-height: 1.2; }
+.escala-desc { color: var(--tinta-suave); grid-column: 2; }
+
+.etiqueta {
+  position: relative; background: var(--vermelho); color: var(--papel);
+  padding: 26px 34px 28px 86px; max-width: 470px;
+  clip-path: polygon(36px 0, 100% 0, 100% 100%, 36px 100%, 0 calc(100% - 36px), 0 36px);
+}
+.etiqueta::after {
+  content: ""; position: absolute; inset: 9px 9px 9px 66px;
+  border: 1px solid rgba(224, 194, 126, .55); pointer-events: none;
+}
+.etiqueta-furo {
+  position: absolute; left: 28px; top: 50%; width: 22px; height: 22px; margin-top: -11px; border-radius: 50%;
+  background: var(--nevoa); box-shadow: 0 0 0 4px var(--ouro-claro);
+}
+.etiqueta-rotulo { font-family: var(--bilhete); font-weight: 500; text-transform: uppercase; letter-spacing: .14em; font-size: .82rem; color: var(--ouro-claro); }
+.etiqueta-local { font-family: var(--display); font-style: italic; font-size: clamp(1.8rem, 3.4vw, 2.4rem); line-height: 1.1; margin: 4px 0 8px; }
+.etiqueta address { font-style: normal; font-size: 1.1rem; line-height: 1.45; }
+
+.envelope { padding: 10px; background: var(--listra); border-radius: 6px; max-width: 580px; }
+.envelope-corpo {
+  background: var(--papel); border-radius: 3px; padding: 26px 28px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px;
+}
+.envelope-texto { flex: 1 1 230px; display: flex; flex-direction: column; gap: 10px; min-width: 0; align-items: flex-start; }
+.envelope-rotulo { font-family: var(--bilhete); font-weight: 500; text-transform: uppercase; letter-spacing: .14em; font-size: .82rem; color: var(--tinta-suave); }
+.envelope-chave { font-family: var(--bilhete); font-weight: 600; font-size: 1.5rem; line-height: 1.2; overflow-wrap: anywhere; }
+.envelope-chave.vazia { font-weight: 500; font-size: 1.2rem; color: var(--tinta-suave); }
+.carimbo { flex: 0 0 auto; width: min(200px, 60vw); color: var(--ouro); transform: rotate(-8deg); }
+
+.envelope-chamada { font-family: var(--display); font-size: 1.35rem; line-height: 1.3; text-wrap: balance; }
+
+/* Check-in */
+.checkin { background: var(--vermelho); color: var(--papel); --foco: var(--ouro-claro); }
+.checkin h2 { color: var(--papel); }
+.checkin h2::after { background: var(--ouro-claro); }
+.checkin-intro { margin-top: 20px; color: #F6E4E2; max-width: 34ch; }
+.checkin-cartao {
+  background: var(--papel); color: var(--tinta); border-radius: 12px; padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 24px 48px -28px rgba(30, 0, 4, .6); --foco: var(--vermelho); max-width: 620px;
+}
+.form-checkin { display: flex; flex-direction: column; gap: 22px; }
+.campo-form { display: flex; flex-direction: column; gap: 8px; border: 0; margin: 0; padding: 0; min-width: 0; }
+.campo-form label, .campo-form legend { font-weight: 600; font-size: 1rem; padding: 0; }
+.campo-form legend { margin-bottom: 8px; }
+.opcional { font-weight: 400; color: var(--tinta-suave); }
+.campo-form input[type="text"], .campo-form select, .campo-form textarea {
+  font: inherit; color: inherit; background: var(--papel); width: 100%;
+  border: 1.5px solid var(--linha); border-radius: 8px; padding: 12px 14px;
+}
+.campo-form input[type="text"]:hover, .campo-form select:hover, .campo-form textarea:hover { border-color: #D6BFB7; }
+.campo-form textarea { resize: vertical; min-height: 96px; }
+.opcoes { display: flex; flex-wrap: wrap; gap: 10px; }
+.opcao { position: relative; }
+.opcao input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.opcao span { display: inline-block; padding: 10px 20px; border: 1.5px solid var(--linha); border-radius: 999px; font-weight: 500; }
+.opcao input:checked + span { background: var(--vermelho); border-color: var(--vermelho); color: var(--papel); }
+.opcao input:focus-visible + span { outline: 3px solid var(--foco); outline-offset: 3px; }
+.erro { color: var(--vermelho); font-weight: 600; }
+.form-checkin .botao { align-self: flex-start; }
+.rotulo-form { font-weight: 600; font-size: 1rem; }
+.lista-nomes {
+  list-style: none; margin: 0; padding: 6px; max-height: 288px; overflow-y: auto;
+  background: var(--papel); border: 1.5px solid var(--linha); border-radius: 8px;
+  box-shadow: 0 16px 32px -22px rgba(30, 0, 4, .5);
+}
+.lista-nomes li { padding: 10px 12px; border-radius: 6px; cursor: pointer; }
+.lista-nomes li:hover, .lista-nomes li[aria-selected="true"] { background: var(--nevoa); color: var(--vermelho); font-weight: 600; }
+.aviso-busca { min-height: 1.4em; font-size: .95rem; color: var(--vermelho); font-weight: 500; }
+.aviso-busca.ok { color: var(--tinta-suave); font-weight: 400; }
+.selecionados { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.selecionados li {
+  display: inline-flex; align-items: center; gap: 8px; max-width: 100%;
+  padding: 6px 6px 6px 14px; border-radius: 999px; background: var(--vermelho); color: var(--papel); font-weight: 500;
+}
+.selecionados span { overflow-wrap: anywhere; }
+.selecionados button {
+  flex: none; width: 28px; height: 28px; border-radius: 50%; border: 0; cursor: pointer;
+  background: rgba(255, 255, 255, .2); color: var(--papel); font-size: 1.1rem; line-height: 1;
+}
+.selecionados button:hover { background: rgba(255, 255, 255, .34); }
+.selecionados button:focus-visible { outline-color: var(--ouro-claro); outline-offset: 1px; }
+.lista-vazia { font-size: 1.05rem; color: var(--tinta-suave); }
+
+.resultado { display: flex; flex-direction: column; gap: 18px; }
+.resultado:focus { outline: none; }
+.resultado-cabeca { border-bottom: 2px dashed var(--linha); padding-bottom: 16px; }
+.resultado-rotulo { font-family: var(--bilhete); font-weight: 500; text-transform: uppercase; letter-spacing: .13em; font-size: .8rem; color: var(--tinta-suave); }
+.resultado-nome { font-family: var(--display); font-style: italic; font-size: 2.1rem; line-height: 1.1; margin-top: 4px; overflow-wrap: anywhere; }
+.resultado-campos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; margin: 0; }
+.resultado-msg { background: var(--nevoa); border-radius: 8px; padding: 14px 16px; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Rodapé */
+.rodape { background: var(--vermelho-profundo); color: #F2DADA; }
+.rodape-conteudo {
+  max-width: 1080px; margin: 0 auto; padding: 40px clamp(16px, 4vw, 32px) 48px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px;
+}
+.selo-rodape { width: 112px; height: 112px; flex: none; }
+.rodape-nomes { font-family: var(--display); font-style: italic; font-size: 1.8rem; color: var(--ouro-claro); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .resultado:not([hidden]) { animation: surgir .45s cubic-bezier(.2, .7, .2, 1); }
+  @keyframes surgir { from { opacity: 0; transform: translateY(10px); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media (max-width: 800px) {
+  .bilhete { grid-template-columns: 1fr; }
+  .bilhete-canhoto { border-left: 0; border-top: 2px dashed var(--linha); }
+  .bilhete-canhoto::before { top: -15px; left: -14px; }
+  .bilhete-canhoto::after { top: -15px; bottom: auto; left: auto; right: -14px; }
+  .bilhete-canhoto .bilhete-faixa { display: none; }
+  .campos-canhoto { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .secao-grade { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .bilhete-faixa { padding-left: 18px; padding-right: 18px; font-size: .82rem; }
+  .rota { padding: 22px 18px 0; }
+  .bilhete h1 { margin: 18px 18px 0; }
+  .campos { grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 20px 18px 0; }
+  .campos-canhoto { grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 22px 18px 0; }
+  .codigo-barras { margin: 20px 18px 0; }
+  .bilhete-canhoto .botao { margin: 18px 18px 0; }
+  .escalas li { grid-template-columns: 1fr; }
+  .escala-hora { grid-row: auto; }
+  .escala-desc { grid-column: auto; }
+  .etiqueta { padding: 22px 24px 24px 70px; }
+  .etiqueta::after { left: 54px; }
+  .etiqueta-furo { left: 22px; }
+  .envelope-corpo { padding: 22px 20px; }
+}
+</style>
+</head>
+<body>
+
+<header class="capa" id="topo">
+  <div class="listra" aria-hidden="true"></div>
+  <nav class="capa-nav" aria-label="Seções do site">
+    <a class="monograma" href="#topo" aria-label="Anne Caroline e Marcos, voltar ao início">A &amp; M</a>
+    <ul>
+      <li><a href="#o-dia">O dia</a></li>
+      <li><a href="#como-chegar">Como chegar</a></li>
+      <li><a href="#presente">Presente</a></li>
+      <li><a href="#confirmar">Confirmar presença</a></li>
+    </ul>
+  </nav>
+
+  <div class="bilhete-wrap">
+    <article class="bilhete" aria-label="Cartão de embarque do casamento">
+      <div class="bilhete-principal">
+        <div class="bilhete-faixa"><span class="cia">A&amp;M Linhas Aéreas</span><span>Cartão de embarque</span></div>
+        <div class="rota">
+          <div class="porto"><span class="codigo">ANN</span><span class="porto-nome">Anne Caroline</span></div>
+          <svg class="trajeto" viewBox="0 0 200 60" aria-hidden="true">
+            <path id="arco" class="arco" d="M8 52 Q100 -8 192 52"/>
+            <circle class="ponto" cx="8" cy="52" r="3"/>
+            <circle class="ponto" cx="192" cy="52" r="3"/>
+            <g id="aviao" class="aviao">
+              <path d="M12 0 L4 -1.6 L-1 -9 L-3.6 -9 L0 -1.6 L-6 -1.6 L-8.6 -4.6 L-10 -4.6 L-8.6 0 L-10 4.6 L-8.6 4.6 L-6 1.6 L0 1.6 L-3.6 9 L-1 9 L4 1.6 Z"/>
+              <animateMotion id="voo" dur="2.6s" begin="0s" fill="freeze" rotate="auto" keyPoints="0;0.5" keyTimes="0;1" calcMode="spline" keySplines="0.45 0 0.2 1"><mpath href="#arco"/></animateMotion>
+            </g>
+          </svg>
+          <div class="porto porto-chegada"><span class="codigo">MAR</span><span class="porto-nome">Marcos</span></div>
+        </div>
+        <h1>Vamos nos casar</h1>
+        <dl class="campos">
+          <div><dt>Voo</dt><dd>AM 2028</dd></div>
+          <div><dt>Data</dt><dd>20 fev 2028</dd></div>
+          <div><dt>Dia</dt><dd>Domingo</dd></div>
+          <div><dt>Embarque</dt><dd data-horario>16h</dd></div>
+          <div><dt>Portão</dt><dd>Lounge Conceito</dd></div>
+          <div><dt>Destino</dt><dd>Caucaia, CE</dd></div>
+        </dl>
+      </div>
+      <div class="bilhete-canhoto">
+        <div class="bilhete-faixa" aria-hidden="true"><span>Canhoto</span><span>AM 2028</span></div>
+        <dl class="campos campos-canhoto">
+          <div><dt>Passageiro</dt><dd>Nosso convidado</dd></div>
+          <div><dt>Classe</dt><dd>Primeira</dd></div>
+          <div><dt>Assento</dt><dd>Livre</dd></div>
+        </dl>
+        <svg class="codigo-barras" id="codigo-barras" aria-hidden="true" preserveAspectRatio="none"></svg>
+        <a class="botao" href="#confirmar">Confirmar presença</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="capa-rodape">
+    <p class="contagem" id="contagem">Faltam <strong>459</strong> dias para a decolagem</p>
+    <p class="capa-local">Domingo, 20 de fevereiro de 2028, em Caucaia (CE)</p>
+  </div>
+</header>
+
+<main>
+  <section class="secao" id="o-dia" aria-labelledby="titulo-dia">
+    <div class="secao-grade">
+      <h2 id="titulo-dia">O dia</h2>
+      <div class="conteudo">
+        <p class="data-grande">Domingo, 20 de fevereiro de 2028</p>
+        <p>A cerimônia e a festa acontecem no mesmo lugar, o Lounge Conceito, em Caucaia. Você chega uma vez e fica com a gente até o fim.</p>
+        <ol class="escalas">
+          <li>
+            <span class="escala-hora" data-horario>16h</span>
+            <span class="escala-nome">Cerimônia</span>
+            <span class="escala-desc">No Lounge Conceito</span>
+          </li>
+          <li>
+            <span class="escala-hora">Logo depois</span>
+            <span class="escala-nome">Festa</span>
+            <span class="escala-desc">No mesmo espaço, com jantar, drinks e DJ</span>
+          </li>
+        </ol>
+        <p class="dica" id="aviso-horario" hidden>O horário sai em breve e vamos avisar por aqui.</p>
+        <div class="botoes">
+          <a class="botao botao-contorno" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Casamento%20de%20Anne%20Caroline%20e%20Marcos&amp;dates=20280220/20280221&amp;details=In%C3%ADcio%20%C3%A0s%2016h.&amp;location=Lounge%20Conceito%2C%20Rua%20Luiz%20Paiva%2C%2075%2C%20Caucaia%20-%20CE">Salvar na agenda do Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-nevoa" id="como-chegar" aria-labelledby="titulo-chegar">
+    <div class="secao-grade">
+      <h2 id="titulo-chegar">Como chegar</h2>
+      <div class="conteudo">
+        <div class="etiqueta">
+          <span class="etiqueta-furo" aria-hidden="true"></span>
+          <p class="etiqueta-rotulo">Destino</p>
+          <p class="etiqueta-local">Lounge Conceito</p>
+          <address>Rua Luiz Paiva, 75<br>Caucaia, Ceará</address>
+        </div>
+        <div class="botoes">
+          <a class="botao" href="https://www.google.com/maps/search/?api=1&amp;query=Lounge%20Conceito%2C%20Rua%20Luiz%20Paiva%2C%2075%2C%20Caucaia%20-%20CE">Abrir no Google Maps</a>
+          <a class="botao botao-contorno" href="https://waze.com/ul?q=Rua%20Luiz%20Paiva%2C%2075%2C%20Caucaia%20CE&amp;navigate=yes">Abrir no Waze</a>
+          <button type="button" class="botao botao-contorno" id="copiar-endereco">Copiar endereço</button>
+        </div>
+        <p class="aviso" id="aviso-endereco" aria-live="polite"></p>
+        <p>Vem de outra cidade? O aeroporto mais próximo é o Pinto Martins, em Fortaleza. Caucaia fica na Região Metropolitana, colada na capital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="presente" aria-labelledby="titulo-presente">
+    <div class="secao-grade">
+      <h2 id="titulo-presente">Lista de presentes</h2>
+      <div class="conteudo">
+        <p>A sua presença já deixa a nossa festa completa. Se quiser nos presentear, montamos uma lista de cotas em Pix com tema de viagem, cada uma com a sua figurinha.</p>
+        <div class="envelope">
+          <div class="envelope-corpo">
+            <div class="envelope-texto">
+              <p class="envelope-rotulo">Cotas a partir de R$ 100</p>
+              <p class="envelope-chamada">Escolha uma cota, faça o Pix e avise a gente pelo WhatsApp.</p>
+              <a class="botao" href="presentes.html">Ver a lista de presentes</a>
+            </div>
+            <svg class="carimbo" viewBox="0 0 200 120" aria-hidden="true">
+              <defs><path id="circulo-carimbo" d="M98,60 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+              <path class="tracos" d="M0 38 q8 -6 16 0 t16 0 t16 0 t16 0 M0 50 q8 -6 16 0 t16 0 t16 0 t16 0 M0 62 q8 -6 16 0 t16 0 t16 0 t16 0 M0 74 q8 -6 16 0 t16 0 t16 0 t16 0 M0 86 q8 -6 16 0 t16 0 t16 0 t16 0"/>
+              <circle cx="136" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="2.4"/>
+              <circle cx="136" cy="60" r="29" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <text font-size="12" transform="translate(38 0)"><textPath href="#circulo-carimbo" textLength="236" lengthAdjust="spacing">LUA DE MEL • PRÓXIMO DESTINO •</textPath></text>
+              <text x="136" y="56" text-anchor="middle" font-size="10" letter-spacing="1.5">FEV</text>
+              <text x="136" y="72" text-anchor="middle" font-size="16" font-weight="700">2028</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao checkin" id="confirmar" aria-labelledby="titulo-confirmar">
+    <div class="secao-grade">
+      <div>
+        <h2 id="titulo-confirmar">Confirmar presença</h2>
+        <p class="checkin-intro" id="checkin-intro">O check-in do nosso voo é por aqui. Procure seu nome na lista de passageiros e a confirmação sai pronta para enviar aos noivos.</p>
+      </div>
+      <div class="checkin-cartao">
+        <form class="form-checkin" id="form-checkin" novalidate>
+          <div class="campo-form">
+            <label for="busca-nome" id="rotulo-busca">Procure seu nome na lista</label>
+            <input type="text" id="busca-nome" name="busca-nome" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="lista-nomes" aria-describedby="dica-busca">
+            <ul class="lista-nomes" id="lista-nomes" role="listbox" aria-label="Nomes encontrados" hidden></ul>
+            <p class="dica" id="dica-busca">Digite pelo menos 3 letras do seu nome ou sobrenome e toque no seu nome.</p>
+            <p class="aviso-busca" id="aviso-busca" aria-live="polite"></p>
+          </div>
+          <div class="campo-form" id="grupo-selecionados" hidden>
+            <p class="rotulo-form" id="rotulo-selecionados">Quem está respondendo</p>
+            <ul class="selecionados" id="selecionados" aria-labelledby="rotulo-selecionados"></ul>
+            <p class="dica">Alguém do mesmo convite vai responder junto? Procure o nome dessa pessoa também.</p>
+          </div>
+          <fieldset class="campo-form">
+            <legend>Você vai?</legend>
+            <div class="opcoes">
+              <label class="opcao" for="resposta-sim"><input type="radio" name="resposta" id="resposta-sim" value="sim" checked><span>Vou, sim</span></label>
+              <label class="opcao" for="resposta-nao"><input type="radio" name="resposta" id="resposta-nao" value="nao"><span>Não vou conseguir</span></label>
+            </div>
+          </fieldset>
+          <div class="campo-form">
+            <label for="recado">Recado para os noivos <span class="opcional">(opcional)</span></label>
+            <textarea id="recado" name="recado" rows="3"></textarea>
+          </div>
+          <p class="erro" id="erro-nome" hidden>Escolha seu nome na lista para a gente saber quem está respondendo.</p>
+          <button type="submit" class="botao" id="preparar">Preparar confirmação</button>
+        </form>
+
+        <p class="lista-vazia" id="lista-vazia" hidden>A lista de passageiros entra aqui em breve.</p>
+
+        <div class="resultado" id="resultado" tabindex="-1" hidden>
+          <div class="resultado-cabeca">
+            <p class="resultado-rotulo">Check-in de</p>
+            <p class="resultado-nome" id="res-nome"></p>
+          </div>
+          <dl class="resultado-campos">
+            <div><dt>Resposta</dt><dd id="res-resposta"></dd></div>
+            <div id="res-pessoas-grupo"><dt>Pessoas</dt><dd id="res-pessoas"></dd></div>
+          </dl>
+          <p class="resultado-msg" id="res-msg"></p>
+          <div class="botoes">
+            <a class="botao" id="enviar-whats" href="#confirmar">Enviar pelo WhatsApp</a>
+            <button type="button" class="botao botao-contorno" id="copiar-msg">Copiar mensagem</button>
+            <button type="button" class="botao-link" id="editar">Editar</button>
+          </div>
+          <p class="dica" id="dica-envio">A confirmação só chega aos noivos depois que você enviar a mensagem.</p>
+          <p class="aviso" id="aviso-msg" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="listra" aria-hidden="true"></div>
+  <div class="rodape-conteudo">
+    <svg class="selo-rodape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Selo de Anne Caroline e Marcos"><g ><circle cx="120" cy="120" r="115" fill="none" style="stroke:var(--ouro-claro)" stroke-width="2.5"/><circle cx="120" cy="120" r="109.5" fill="none" style="stroke:var(--ouro-claro)" stroke-width="1"/><circle cx="120" cy="120" r="79" fill="none" style="stroke:var(--ouro-claro)" stroke-width="1.5"/><path style="fill:var(--ouro-claro)" d="M44.5 74.5 43 74Q43 73.9 42.9 74L41.9 75.8Q41.8 75.9 41.9 76L43 77Q43.2 77.1 43.1 77.2L42.4 78.3Q42.3 78.5 42.2 78.4L34.8 71.6Q34.7 71.5 34.7 71.4L35.5 70Q35.6 69.9 35.7 70L45.3 73L45.4 73Q45.5 73.1 45.4 73.3L44.7 74.4Q44.6 74.6 44.5 74.5ZM40.8 75 41.6 73.6Q41.7 73.5 41.6 73.5L37.2 71.9Q37.2 71.9 37.2 71.9Q37.2 71.9 37.2 72L40.7 75Q40.8 75 40.8 75ZM41.8 60.6 42.6 59.5Q42.7 59.5 42.7 59.5Q42.8 59.5 42.9 59.5L50.8 65.3Q50.8 65.4 50.8 65.4Q50.8 65.5 50.8 65.6L49.9 66.8Q49.8 66.9 49.7 66.9L43.4 65Q43.4 64.9 43.4 65Q43.4 65 43.4 65L48.3 68.6Q48.4 68.7 48.4 68.8Q48.4 68.8 48.4 68.9L47.6 69.9Q47.5 70 47.5 70Q47.4 70 47.3 70L39.4 64.2Q39.4 64.1 39.4 64.1Q39.4 64 39.4 63.9L40.3 62.7Q40.4 62.6 40.5 62.7L46.7 64.5Q46.8 64.5 46.8 64.5Q46.8 64.5 46.8 64.4L41.9 60.9Q41.8 60.8 41.8 60.7Q41.8 60.7 41.8 60.6ZM49.1 52.1 50 51.2Q50 51.1 50.1 51.1Q50.2 51.1 50.2 51.2L57.4 57.8Q57.5 57.9 57.5 58Q57.5 58 57.4 58.1L56.4 59.2Q56.3 59.3 56.1 59.2L50.2 56.6Q50.1 56.6 50.1 56.6Q50.1 56.7 50.1 56.7L54.6 60.9Q54.6 60.9 54.7 61Q54.7 61 54.6 61.1L53.7 62.1Q53.7 62.1 53.6 62.1Q53.5 62.1 53.5 62.1L46.3 55.4Q46.2 55.3 46.2 55.3Q46.2 55.2 46.3 55.2L47.3 54.1Q47.4 54 47.5 54L53.5 56.6Q53.5 56.6 53.5 56.6Q53.6 56.5 53.5 56.5L49.1 52.4Q49 52.3 49 52.3Q49 52.2 49.1 52.1ZM58.6 45.3 56.2 47.3Q56.1 47.4 56.2 47.4L58 49.5Q58 49.6 58.1 49.5L59.5 48.3Q59.5 48.2 59.6 48.3Q59.7 48.3 59.7 48.3L60.5 49.2Q60.5 49.2 60.5 49.3Q60.5 49.4 60.5 49.4L59.1 50.6Q59 50.7 59 50.7L60.8 52.8Q60.9 52.9 61 52.8L63.3 50.8Q63.4 50.7 63.4 50.7Q63.5 50.7 63.6 50.8L64.3 51.6Q64.3 51.7 64.3 51.7Q64.3 51.8 64.3 51.9L60.7 54.9Q60.7 55 60.6 55Q60.5 55 60.5 54.9L54 47.5Q54 47.5 54 47.4Q54 47.3 54.1 47.3L57.6 44.2Q57.7 44.1 57.7 44.1Q57.8 44.1 57.9 44.2L58.6 45Q58.6 45.1 58.6 45.2Q58.6 45.2 58.6 45.3ZM70.5 44.1 67.9 39.8Q67.3 38.8 67.5 37.8Q67.8 36.7 68.8 36.1Q69.9 35.4 70.9 35.7Q72 35.9 72.6 37L72.7 37.1Q72.7 37.2 72.7 37.3Q72.7 37.3 72.6 37.4L71.5 38.1Q71.4 38.2 71.3 38.1L71.1 37.8Q70.8 37.3 70.4 37.2Q70 37.1 69.6 37.3Q69.2 37.6 69.1 38Q69 38.4 69.3 38.9L72 43.3Q72.3 43.7 72.7 43.8Q73.1 44 73.5 43.7Q73.9 43.5 74 43Q74.1 42.6 73.8 42.2L73.6 41.9Q73.6 41.8 73.6 41.8Q73.6 41.7 73.7 41.6L74.9 41Q74.9 41 75 41Q75.1 41 75.1 41L75.2 41.2Q75.8 42.2 75.6 43.3Q75.3 44.3 74.3 45Q73.2 45.6 72.2 45.4Q71.2 45.1 70.5 44.1ZM83.4 39.8 82.5 38.5Q82.5 38.5 82.4 38.5L80.5 39.4Q80.4 39.4 80.4 39.5L80.9 41Q80.9 41.1 80.7 41.2L79.6 41.8Q79.4 41.9 79.3 41.7L77.1 31.9Q77 31.8 77.2 31.7L78.6 31Q78.7 31 78.8 31.1L84.9 39L85 39.1Q85 39.2 84.9 39.3L83.7 39.8Q83.5 39.9 83.4 39.8ZM80.1 38.1 81.6 37.4Q81.7 37.4 81.6 37.3L78.9 33.5Q78.9 33.5 78.9 33.5Q78.8 33.5 78.8 33.6L80.1 38.1Q80.1 38.1 80.1 38.1ZM91.9 36.4 89.4 32.9Q89.4 32.9 89.3 32.9L88.6 33.1Q88.5 33.2 88.5 33.2L89.9 37.1Q89.9 37.2 89.9 37.2Q89.9 37.3 89.8 37.3L88.5 37.8Q88.5 37.8 88.4 37.8Q88.3 37.7 88.3 37.7L85.1 28.4Q85 28.4 85.1 28.3Q85.1 28.2 85.2 28.2L87.8 27.3Q88.5 27 89.2 27.2Q89.8 27.4 90.4 27.9Q90.9 28.4 91.2 29.2Q91.5 30.1 91.4 30.8Q91.3 31.5 90.8 32.1Q90.7 32.1 90.8 32.2L93.6 35.8Q93.6 35.8 93.6 35.9Q93.6 36 93.5 36L92.2 36.5Q92 36.6 91.9 36.4ZM87.1 29.1 88.1 31.9Q88.1 31.9 88.2 31.9L89 31.6Q89.5 31.4 89.7 30.9Q89.8 30.5 89.6 29.8Q89.4 29.1 88.9 28.9Q88.5 28.6 88 28.8L87.2 29Q87.1 29.1 87.1 29.1ZM96.5 32.4 95.4 27.7Q95.1 26.5 95.6 25.6Q96.2 24.7 97.4 24.4Q98.6 24.1 99.6 24.6Q100.5 25.2 100.8 26.4L101.9 31.1Q102.2 32.4 101.6 33.3Q101 34.2 99.8 34.5Q98.6 34.8 97.7 34.2Q96.8 33.6 96.5 32.4ZM100.3 31.6 99.1 26.7Q99 26.2 98.6 25.9Q98.2 25.7 97.7 25.8Q97.3 25.9 97.1 26.3Q96.8 26.7 97 27.2L98.1 32.1Q98.3 32.6 98.6 32.9Q99 33.2 99.5 33.1Q99.9 32.9 100.2 32.5Q100.4 32.1 100.3 31.6ZM106.4 32.8 105.2 23.1Q105.2 23.1 105.2 23Q105.3 22.9 105.3 22.9L106.6 22.8Q106.7 22.8 106.8 22.8Q106.8 22.8 106.8 22.9L107.9 31.3Q107.9 31.4 108 31.4L111.1 31Q111.2 30.9 111.2 31Q111.3 31 111.3 31.1L111.5 32.2Q111.5 32.3 111.4 32.3Q111.4 32.4 111.3 32.4L106.6 33Q106.6 33 106.5 33Q106.4 32.9 106.4 32.8ZM115.1 32 114.6 22.2Q114.6 22.1 114.6 22Q114.7 22 114.8 22L116.1 21.9Q116.2 21.9 116.2 22Q116.3 22 116.3 22.1L116.7 31.9Q116.7 32 116.7 32Q116.6 32.1 116.6 32.1L115.2 32.1Q115.2 32.1 115.1 32.1Q115.1 32 115.1 32ZM125.7 22 127 22.1Q127.1 22.1 127.1 22.1Q127.2 22.2 127.2 22.2L126.7 32Q126.7 32.1 126.7 32.2Q126.6 32.2 126.6 32.2L125 32.1Q124.9 32.1 124.9 32L123 25.7Q123 25.7 122.9 25.7Q122.9 25.7 122.9 25.8L122.6 31.9Q122.6 31.9 122.6 32Q122.5 32 122.4 32L121.1 32Q121.1 32 121 31.9Q121 31.9 121 31.8L121.4 22Q121.4 21.9 121.4 21.9Q121.5 21.8 121.6 21.8L123.1 21.9Q123.2 21.9 123.2 22L125.1 28.2Q125.2 28.3 125.2 28.3Q125.2 28.3 125.2 28.2L125.5 22.2Q125.5 22.1 125.6 22Q125.6 22 125.7 22ZM137.1 24.8 134 24.3Q133.9 24.3 133.9 24.4L133.5 27.1Q133.5 27.2 133.5 27.2L135.4 27.4Q135.4 27.5 135.5 27.5Q135.5 27.6 135.5 27.6L135.3 28.7Q135.3 28.8 135.3 28.9Q135.2 28.9 135.1 28.9L133.3 28.6Q133.2 28.6 133.2 28.7L132.8 31.4Q132.8 31.5 132.9 31.5L136 32Q136 32 136.1 32Q136.1 32.1 136.1 32.1L135.9 33.2Q135.9 33.3 135.9 33.4Q135.8 33.4 135.7 33.4L131.1 32.7Q131 32.7 131 32.6Q130.9 32.5 130.9 32.5L132.4 22.8Q132.4 22.7 132.5 22.7Q132.5 22.6 132.6 22.6L137.3 23.3Q137.3 23.4 137.4 23.4Q137.4 23.5 137.4 23.5L137.3 24.6Q137.2 24.7 137.2 24.8Q137.1 24.8 137.1 24.8ZM151.8 37.8Q151.8 37.9 151.7 37.8L150.3 37.4Q150.2 37.3 150.1 37.2L149.9 36.5Q149.9 36.5 149.8 36.5Q148.6 36.9 147.3 36.5Q146.1 36.1 145.6 35.2Q145.2 34.4 145.6 33.2Q145.9 32.3 146.5 31.8Q147.1 31.3 148 31Q148.1 31 148.1 30.9Q147.7 29.8 147.7 29.3Q147.6 28.8 147.8 28.3Q148.2 27.2 149 26.8Q149.9 26.4 150.9 26.7Q151.6 27 152.1 27.4Q152.5 27.9 152.7 28.6Q152.8 29.2 152.6 29.9Q152.3 30.8 151.6 31.2Q151 31.7 150.1 32Q150 32 150 32.1Q150 32.2 150.3 33L150.7 34.2Q150.7 34.2 150.7 34.3Q150.8 34.3 150.8 34.2Q151.3 33.9 151.8 33.4Q151.9 33.3 152 33.4L152.8 34.3Q152.9 34.4 152.7 34.5Q152 35.2 151.3 35.7Q151.2 35.8 151.2 35.8Q151.4 36.4 151.8 37.6Q151.8 37.7 151.8 37.8ZM149.4 28.9Q149.3 29.2 149.3 29.5Q149.3 29.7 149.5 30.5Q149.5 30.5 149.6 30.5Q150.1 30.3 150.5 30.1Q150.8 29.8 151 29.4Q151.1 29 151 28.6Q150.8 28.3 150.5 28.2Q150.1 28.1 149.8 28.3Q149.5 28.5 149.4 28.9ZM149.4 35Q149.4 35 149.4 34.9L149.1 34.1L148.6 32.6Q148.6 32.5 148.5 32.5Q147.4 32.9 147.2 33.7Q147 34.1 147.2 34.6Q147.4 35 147.9 35.1Q148.5 35.4 149.4 35ZM169.6 35.3 170.8 36Q170.8 36 170.9 36.1Q170.9 36.1 170.8 36.2L166 44.7Q166 44.8 165.9 44.8Q165.9 44.8 165.8 44.8L164.6 44.1Q164.6 44.1 164.5 44Q164.5 44 164.6 43.9L167.9 37.9Q168 37.9 167.9 37.9Q167.9 37.9 167.9 37.9L165.6 39.3Q165.5 39.3 165.5 39.3Q165.4 39.3 165.4 39.1L165.4 36.5Q165.4 36.5 165.4 36.5Q165.4 36.4 165.3 36.5L162 42.5Q162 42.5 161.9 42.5Q161.8 42.6 161.7 42.5L160.6 41.9Q160.5 41.8 160.5 41.8Q160.5 41.7 160.5 41.6L165.3 33.1Q165.4 33 165.4 33Q165.5 33 165.6 33L166.7 33.7Q166.9 33.7 166.9 33.9L166.9 36.7Q166.9 36.8 166.9 36.8L169.4 35.3Q169.5 35.2 169.6 35.3ZM172.7 49.3 173.4 47.9Q173.4 47.9 173.4 47.8L171.6 46.6Q171.6 46.5 171.5 46.6L170.4 47.7Q170.3 47.8 170.2 47.7L169.1 46.9Q168.9 46.8 169.1 46.7L176.5 40Q176.7 39.9 176.8 39.9L178 40.8Q178.2 40.9 178.1 41.1L174.1 50.3L174.1 50.3Q174 50.4 173.9 50.4L172.8 49.6Q172.6 49.5 172.7 49.3ZM172.6 45.7 173.9 46.6Q174 46.6 174 46.6L176 42.4Q176 42.3 176 42.3Q176 42.3 175.9 42.3L172.6 45.6Q172.5 45.6 172.6 45.7ZM179.8 55.2 181.6 51.3Q181.6 51.2 181.6 51.2L181 50.7Q181 50.6 180.9 50.7L178.2 53.7Q178.1 53.8 178.1 53.8Q178 53.8 177.9 53.7L176.9 52.9Q176.9 52.8 176.9 52.7Q176.9 52.7 176.9 52.6L183.5 45.3Q183.5 45.3 183.6 45.3Q183.7 45.2 183.7 45.3L185.7 47.1Q186.3 47.6 186.5 48.3Q186.7 49 186.5 49.7Q186.3 50.4 185.7 51.1Q185.1 51.7 184.4 52Q183.7 52.2 183 52.1Q183 52 182.9 52.1L181.1 56.3Q181.1 56.3 181 56.4Q181 56.5 180.8 56.3L179.8 55.4Q179.7 55.3 179.8 55.2ZM183.8 47.4 181.9 49.6Q181.8 49.6 181.9 49.7L182.6 50.3Q182.9 50.6 183.5 50.5Q184 50.5 184.4 49.9Q184.9 49.4 184.9 48.9Q185 48.4 184.6 48L183.9 47.4Q183.9 47.4 183.8 47.4ZM185.4 57.2 189.1 53.9Q190 53.1 191.1 53.2Q192.1 53.2 192.9 54.1Q193.8 55.1 193.7 56.1Q193.7 57.2 192.8 58L192.6 58.1Q192.6 58.2 192.5 58.2Q192.4 58.2 192.4 58.1L191.4 57.2Q191.3 57 191.4 56.9L191.7 56.7Q192.1 56.3 192.1 55.9Q192.2 55.5 191.9 55.1Q191.5 54.8 191.1 54.8Q190.7 54.8 190.3 55.1L186.4 58.6Q186.1 58.9 186 59.4Q186 59.8 186.3 60.1Q186.6 60.5 187.1 60.5Q187.5 60.5 187.9 60.1L188.1 59.9Q188.2 59.9 188.3 59.9Q188.3 59.9 188.4 59.9L189.2 61Q189.3 61 189.3 61.1Q189.3 61.1 189.2 61.2L189.1 61.3Q188.2 62.1 187.1 62.1Q186.1 62 185.2 61.1Q184.4 60.2 184.5 59.1Q184.5 58.1 185.4 57.2ZM191.7 64.5 195.6 61.6Q196.6 60.9 197.7 61Q198.7 61.2 199.5 62.2Q200.2 63.2 200.1 64.3Q199.9 65.3 198.9 66.1L194.9 68.9Q193.9 69.7 192.9 69.5Q191.8 69.3 191.1 68.3Q190.3 67.3 190.5 66.2Q190.7 65.2 191.7 64.5ZM193.9 67.6 198 64.7Q198.4 64.4 198.5 63.9Q198.6 63.5 198.3 63.1Q198 62.7 197.6 62.6Q197.1 62.6 196.7 62.9L192.6 65.9Q192.2 66.2 192.1 66.6Q192 67.1 192.3 67.5Q192.5 67.9 193 67.9Q193.4 68 193.9 67.6ZM197 72.4 197.3 72.2Q197.4 72.2 197.5 72.2Q197.5 72.2 197.6 72.3L198.2 73.4Q198.3 73.5 198.3 73.5Q198.2 73.6 198.2 73.6L197.9 73.8Q197.4 74.1 197.3 74.5Q197.1 74.9 197.3 75.3Q197.6 75.7 198 75.8Q198.4 75.9 198.9 75.6Q199.2 75.4 199.4 75.1Q199.5 74.8 199.6 74.5Q199.7 74.1 199.7 73.3Q199.8 72.4 200 71.8Q200.1 71.3 200.4 70.7Q200.8 70.2 201.4 69.8Q202.5 69.2 203.5 69.5Q204.4 69.7 205 70.8Q205.6 71.8 205.4 72.8Q205.1 73.8 204 74.4L203.7 74.6Q203.7 74.7 203.6 74.6Q203.5 74.6 203.5 74.6L202.8 73.4Q202.8 73.4 202.8 73.3Q202.8 73.2 202.9 73.2L203.2 73Q203.7 72.7 203.9 72.3Q204 71.9 203.8 71.5Q203.6 71.1 203.2 71Q202.7 70.9 202.3 71.2Q201.8 71.5 201.7 71.9Q201.5 72.4 201.4 73.4Q201.3 74.5 201.1 75.1Q201 75.7 200.7 76.2Q200.4 76.6 199.8 77Q198.7 77.6 197.7 77.3Q196.7 77.1 196.1 76Q195.5 75 195.7 74Q196 73 197 72.4Z"/><path style="fill:var(--ouro-claro)" d="M46.5 182.4 50.2 179.1Q51.1 178.2 52.1 178.3Q53.2 178.4 54 179.3Q54.8 180.2 54.8 181.3Q54.7 182.3 53.8 183.2L53.7 183.3Q53.6 183.3 53.6 183.3Q53.5 183.3 53.4 183.3L52.5 182.3Q52.4 182.2 52.5 182.1L52.8 181.8Q53.1 181.5 53.2 181.1Q53.2 180.6 52.9 180.3Q52.6 179.9 52.2 179.9Q51.7 179.9 51.4 180.3L47.5 183.7Q47.1 184.1 47.1 184.5Q47 184.9 47.3 185.3Q47.7 185.6 48.1 185.6Q48.5 185.6 48.9 185.3L49.2 185Q49.2 185 49.3 185Q49.4 185 49.4 185.1L50.3 186.1Q50.3 186.2 50.3 186.2Q50.3 186.3 50.3 186.3L50.1 186.5Q49.2 187.3 48.2 187.2Q47.1 187.2 46.3 186.2Q45.4 185.3 45.5 184.3Q45.6 183.2 46.5 182.4ZM54.4 194 55.2 192.6Q55.3 192.6 55.2 192.5L53.7 191.1Q53.6 191 53.5 191.1L52.3 192Q52.2 192.2 52.1 192L51.1 191.1Q50.9 191 51.1 190.9L59.3 185.1Q59.4 185 59.5 185.1L60.7 186.1Q60.8 186.3 60.7 186.4L55.7 195.1L55.6 195.1Q55.6 195.2 55.4 195.1L54.4 194.2Q54.3 194.1 54.4 194ZM54.7 190.3 55.9 191.4Q56 191.4 56 191.4L58.5 187.4Q58.5 187.4 58.5 187.4Q58.5 187.3 58.4 187.4L54.7 190.2Q54.7 190.2 54.7 190.3ZM60.5 195.7 64.8 189.9Q64.9 189.8 64.9 189.8Q65 189.8 65.1 189.9L66.1 190.7Q66.2 190.7 66.2 190.8Q66.2 190.9 66.2 190.9L61.8 196.8Q61.5 197.3 61.5 197.7Q61.5 198.2 61.9 198.5Q62.3 198.8 62.7 198.6Q63.2 198.5 63.5 198.1L67.9 192.2Q67.9 192.1 68 192.1Q68.1 192.1 68.1 192.1L69.2 192.9Q69.2 193 69.2 193Q69.3 193.1 69.2 193.2L65 198.9Q64.2 200 63.1 200.2Q62 200.4 61 199.6Q60 198.9 59.9 197.8Q59.8 196.7 60.5 195.7ZM68.5 201.5 71 197.2Q71.6 196.2 72.6 195.9Q73.7 195.7 74.7 196.3Q75.8 196.9 76.1 198Q76.3 199 75.7 200.1L75.6 200.2Q75.6 200.3 75.5 200.3Q75.4 200.3 75.4 200.3L74.2 199.6Q74 199.5 74.1 199.4L74.3 199.1Q74.6 198.6 74.5 198.2Q74.4 197.8 74 197.6Q73.6 197.3 73.2 197.4Q72.8 197.6 72.5 198L69.8 202.5Q69.6 202.9 69.7 203.3Q69.8 203.8 70.2 204Q70.6 204.2 71 204.1Q71.4 204 71.7 203.5L71.8 203.2Q71.9 203.2 71.9 203.2Q72 203.1 72.1 203.2L73.2 203.9Q73.3 203.9 73.3 204Q73.3 204.1 73.3 204.2L73.2 204.3Q72.5 205.4 71.5 205.6Q70.5 205.9 69.4 205.2Q68.4 204.6 68.1 203.6Q67.8 202.6 68.5 201.5ZM79.5 210.2 79.9 208.7Q79.9 208.6 79.8 208.6L77.9 207.7Q77.9 207.6 77.8 207.7L76.9 209Q76.8 209.1 76.7 209L75.5 208.5Q75.3 208.4 75.4 208.2L81.5 200.3Q81.6 200.1 81.8 200.2L83.1 200.8Q83.3 200.9 83.2 201.1L81.1 210.9L81 210.9Q81 211 80.8 211L79.6 210.4Q79.4 210.3 79.5 210.2ZM78.7 206.6 80.2 207.3Q80.2 207.3 80.3 207.2L81.4 202.7Q81.4 202.7 81.4 202.7Q81.4 202.7 81.4 202.7L78.7 206.5Q78.6 206.6 78.7 206.6ZM85.1 212.5 88.5 203.3Q88.5 203.2 88.5 203.2Q88.6 203.1 88.7 203.1L89.9 203.6Q90 203.6 90 203.7Q90.1 203.8 90 203.8L86.6 213Q86.6 213.1 86.6 213.1Q86.5 213.2 86.4 213.1L85.2 212.7Q85.1 212.6 85.1 212.6Q85 212.5 85.1 212.5ZM95.1 215.7 95.2 214.1Q95.2 214 95.1 214L93.1 213.5Q93 213.4 93 213.5L92.3 214.9Q92.3 215.1 92.1 215L90.8 214.7Q90.6 214.6 90.7 214.4L95.4 205.6Q95.5 205.4 95.6 205.4L97.1 205.9Q97.3 205.9 97.3 206.1L96.7 216.1L96.7 216.1Q96.7 216.3 96.5 216.2L95.2 215.9Q95 215.8 95.1 215.7ZM93.7 212.3 95.2 212.7Q95.3 212.7 95.3 212.6L95.7 208Q95.7 207.9 95.7 207.9Q95.7 207.9 95.7 208L93.6 212.2Q93.6 212.2 93.7 212.3ZM107.1 214.2Q107.2 213.4 107.8 213Q108.4 212.5 109.2 212.6Q109.9 212.7 110.4 213.3Q110.8 213.9 110.7 214.6Q110.7 215.1 110.4 215.5Q110.1 215.9 109.6 216.1Q109.2 216.3 108.7 216.2Q108.2 216.1 107.9 215.8Q107.5 215.6 107.3 215.1Q107.1 214.7 107.1 214.2ZM122.7 217.5 125.9 217.4Q125.9 217.4 126 217.5Q126 217.5 126 217.6L126.1 218.7Q126.1 218.8 126 218.8Q126 218.9 125.9 218.9L120.8 219Q120.8 219 120.7 219Q120.7 218.9 120.7 218.9L120.6 217.7Q120.6 217.6 120.7 217.5L121.2 216.7Q121.8 215.9 122.3 215.1Q122.8 214.3 123.2 213.7Q124 212.3 123.9 211.4Q123.9 210.8 123.6 210.4Q123.4 210.1 123 210.1Q122.5 210.1 122.3 210.5Q122.1 210.8 122.1 211.4L122.1 211.9Q122.1 212 122.1 212Q122 212.1 122 212.1L120.6 212.1Q120.5 212.1 120.5 212.1Q120.4 212 120.4 212L120.4 211.4Q120.4 210.2 121.1 209.5Q121.8 208.7 123 208.7Q124.1 208.6 124.9 209.4Q125.6 210.1 125.6 211.3Q125.6 212 125.4 212.8Q125.2 213.5 124.7 214.3Q124.4 214.9 123.9 215.6Q123.4 216.3 123.2 216.5Q122.8 217.1 122.6 217.4Q122.6 217.5 122.6 217.5Q122.6 217.5 122.7 217.5ZM129.9 215.9 129.3 211.1Q129.1 209.8 129.8 209Q130.4 208.1 131.6 207.9Q132.8 207.8 133.7 208.4Q134.5 209.1 134.7 210.4L135.3 215.2Q135.5 216.4 134.8 217.3Q134.2 218.1 133 218.3Q131.8 218.5 130.9 217.8Q130.1 217.1 129.9 215.9ZM133.6 215.5 133 210.5Q132.9 209.9 132.6 209.6Q132.3 209.3 131.8 209.4Q131.3 209.4 131.1 209.8Q130.9 210.2 130.9 210.8L131.6 215.8Q131.7 216.3 132 216.6Q132.3 216.9 132.8 216.9Q133.2 216.8 133.5 216.4Q133.7 216 133.6 215.5ZM139.8 216Q139.7 215.5 139.9 215.2Q140.1 214.9 140.6 214.8Q141 214.7 141.3 214.9Q141.7 215.1 141.8 215.6Q141.9 216 141.6 216.3Q141.4 216.7 141 216.8Q140.5 216.9 140.2 216.7Q139.9 216.4 139.8 216ZM144.9 213.1 143.5 208.5Q143.2 207.3 143.7 206.3Q144.2 205.3 145.3 205Q146.5 204.6 147.4 205.2Q148.4 205.7 148.7 206.9L150.1 211.6Q150.5 212.8 150 213.7Q149.5 214.7 148.3 215Q147.2 215.4 146.2 214.8Q145.3 214.3 144.9 213.1ZM148.5 212.1 147.1 207.3Q146.9 206.8 146.6 206.5Q146.2 206.3 145.7 206.4Q145.3 206.5 145.1 206.9Q145 207.3 145.1 207.9L146.6 212.7Q146.7 213.3 147.1 213.5Q147.5 213.8 147.9 213.6Q148.4 213.5 148.5 213.1Q148.7 212.7 148.5 212.1ZM156.3 210.5 159.3 209.3Q159.4 209.3 159.4 209.3Q159.5 209.4 159.5 209.4L159.9 210.4Q160 210.5 159.9 210.6Q159.9 210.6 159.8 210.7L155.2 212.6Q155.1 212.6 155 212.6Q155 212.6 154.9 212.5L154.5 211.4Q154.4 211.3 154.5 211.2L154.7 210.3Q154.9 209.3 155.1 208.4Q155.4 207.5 155.5 206.8Q155.7 205.2 155.4 204.3Q155.2 203.8 154.8 203.6Q154.4 203.4 154 203.5Q153.7 203.7 153.6 204.1Q153.4 204.5 153.7 205L153.9 205.5Q153.9 205.5 153.9 205.6Q153.8 205.7 153.8 205.7L152.5 206.2Q152.5 206.2 152.4 206.2Q152.3 206.2 152.3 206.1L152.1 205.5Q151.7 204.4 152.1 203.5Q152.5 202.6 153.6 202.1Q154.6 201.7 155.6 202.1Q156.5 202.6 157 203.7Q157.2 204.4 157.3 205.1Q157.3 205.9 157.1 206.8Q157 207.5 156.8 208.3Q156.6 209.2 156.5 209.4Q156.4 210.1 156.3 210.5Q156.3 210.5 156.3 210.5Q156.3 210.5 156.3 210.5ZM163.3 207.9Q163.1 207.5 163.2 207.1Q163.4 206.7 163.8 206.5Q164.2 206.3 164.5 206.5Q164.9 206.6 165.1 207Q165.3 207.4 165.2 207.8Q165.1 208.2 164.7 208.4Q164.3 208.6 163.9 208.4Q163.5 208.3 163.3 207.9ZM170.4 203.5 173.1 201.9Q173.1 201.8 173.2 201.9Q173.3 201.9 173.3 201.9L173.9 202.9Q173.9 202.9 173.9 203Q173.9 203.1 173.8 203.1L169.5 205.8Q169.5 205.8 169.4 205.8Q169.3 205.8 169.3 205.7L168.7 204.7Q168.6 204.6 168.6 204.5L168.7 203.5Q168.8 202.6 168.8 201.7Q168.9 200.7 168.9 200Q168.9 198.3 168.4 197.6Q168.1 197.1 167.7 196.9Q167.3 196.8 167 197Q166.6 197.2 166.6 197.6Q166.5 198 166.8 198.5L167.1 199Q167.2 199 167.1 199.1Q167.1 199.2 167.1 199.2L165.9 199.9Q165.8 199.9 165.8 199.9Q165.7 199.9 165.7 199.8L165.3 199.3Q164.8 198.3 165 197.3Q165.3 196.3 166.3 195.7Q167.3 195.1 168.2 195.4Q169.2 195.7 169.9 196.7Q170.2 197.3 170.4 198Q170.6 198.8 170.5 199.8Q170.5 200.4 170.5 201.3Q170.4 202.1 170.4 202.4Q170.3 203.1 170.3 203.5Q170.3 203.5 170.3 203.5Q170.3 203.6 170.4 203.5ZM175.9 198.5 172.9 194.7Q172.2 193.7 172.3 192.6Q172.4 191.5 173.4 190.8Q174.4 190.1 175.4 190.2Q176.5 190.4 177.3 191.4L180.2 195.3Q180.9 196.3 180.8 197.4Q180.7 198.4 179.7 199.2Q178.7 199.9 177.7 199.7Q176.6 199.6 175.9 198.5ZM178.9 196.4 175.9 192.3Q175.5 191.9 175.1 191.8Q174.7 191.7 174.3 192Q173.9 192.3 173.9 192.7Q173.9 193.1 174.2 193.6L177.3 197.6Q177.6 198.1 178 198.2Q178.5 198.3 178.8 198Q179.2 197.7 179.2 197.3Q179.2 196.8 178.9 196.4ZM185.7 192.2 188 190Q188 190 188.1 190Q188.2 190 188.2 190L189 190.8Q189 190.9 189 190.9Q189 191 189 191.1L185.3 194.5Q185.2 194.5 185.1 194.5Q185.1 194.5 185 194.5L184.2 193.6Q184.1 193.5 184.1 193.4L184 192.5Q183.9 191.5 183.8 190.6Q183.7 189.6 183.5 188.9Q183.2 187.3 182.6 186.7Q182.2 186.2 181.8 186.2Q181.4 186.1 181.1 186.4Q180.7 186.7 180.8 187.1Q180.8 187.5 181.2 187.9L181.6 188.3Q181.6 188.3 181.6 188.4Q181.6 188.5 181.6 188.5L180.6 189.4Q180.5 189.5 180.4 189.5Q180.4 189.5 180.3 189.4L179.9 189Q179.2 188.1 179.2 187.1Q179.3 186 180.1 185.3Q181 184.5 182 184.6Q183 184.6 183.8 185.5Q184.3 186.1 184.6 186.8Q184.9 187.4 185.1 188.4Q185.2 189.1 185.3 189.9Q185.4 190.8 185.4 191Q185.5 191.8 185.6 192.1Q185.6 192.2 185.6 192.2Q185.6 192.2 185.7 192.2ZM190.9 181.3Q191.4 181.2 192 181.3Q192.7 181.6 193.3 182.1Q193.9 182.7 194.2 183.2Q194.6 184 194.5 184.7Q194.4 185.5 193.9 186.1Q193.3 186.7 192.6 186.9Q191.8 187.1 191 186.8Q190.4 186.5 189.9 186Q189.2 185.4 189 184.8Q188.7 184.3 188.8 183.7Q188.8 183.6 188.7 183.6Q188.2 183.8 187.6 183.6Q187 183.4 186.4 182.9Q185.8 182.3 185.5 181.7Q185.3 181.1 185.4 180.4Q185.5 179.7 186.1 179.1Q186.6 178.6 187.3 178.3Q187.9 178.1 188.6 178.3Q189.3 178.5 189.9 179Q190.4 179.5 190.7 180.1Q190.9 180.7 190.8 181.3Q190.8 181.4 190.9 181.3ZM187.2 181.2Q187.3 181.5 187.6 181.8Q187.9 182 188.3 182.2Q188.6 182.3 188.9 182.3Q189.1 182.3 189.3 182.1Q189.5 181.8 189.5 181.5Q189.5 181.3 189.4 181Q189.2 180.7 188.9 180.4Q188.5 180 188.2 179.9Q187.9 179.8 187.6 179.9Q187.3 179.9 187.2 180.1Q187 180.3 187 180.5Q186.9 180.8 187.1 181ZM192.2 183.3Q191.8 183 191.4 182.8Q191.1 182.6 190.8 182.7Q190.5 182.7 190.3 182.9Q190.1 183.1 190.1 183.4Q190.1 183.7 190.3 184Q190.5 184.4 190.9 184.7Q191.2 185 191.6 185.2Q191.9 185.4 192.2 185.4Q192.6 185.4 192.8 185.1Q193 184.9 193 184.6Q193 184.2 192.7 183.9Q192.5 183.6 192.2 183.3Z"/><path style="fill:var(--ouro-claro)" transform="translate(214 120) rotate(90) scale(.78)" d="M12 0 L4 -1.6 L-1 -9 L-3.6 -9 L0 -1.6 L-6 -1.6 L-8.6 -4.6 L-10 -4.6 L-8.6 0 L-10 4.6 L-8.6 4.6 L-6 1.6 L0 1.6 L-3.6 9 L-1 9 L4 1.6 Z"/><path style="fill:var(--ouro-claro)" transform="translate(26 120) rotate(-90) scale(.78)" d="M12 0 L4 -1.6 L-1 -9 L-3.6 -9 L0 -1.6 L-6 -1.6 L-8.6 -4.6 L-10 -4.6 L-8.6 0 L-10 4.6 L-8.6 4.6 L-6 1.6 L0 1.6 L-3.6 9 L-1 9 L4 1.6 Z"/><path style="fill:var(--ouro-claro)" d="M62.4 139 84.8 100.3H86.5L91.3 139H85.1L81.9 107.1L63.6 139ZM58.7 139V138H69.8V139ZM79.3 139V138H94.8V139ZM70.2 127.1V126.1H87V127.1ZM127.3 139.5Q124.4 139.5 122.6 138.2Q120.8 136.9 119.7 134.4L111.5 115.2Q110.9 113.6 110.5 112.2Q110.2 110.8 110.2 109.5Q110.2 106.9 111.8 104.9Q113.3 102.9 116 101.7Q118.7 100.5 122.1 100.5Q123.8 100.5 125.4 100.9Q127 101.4 128.3 102.2Q129.6 103 130.3 104.2Q131.1 105.4 131.1 106.9Q131.1 108.8 130.1 110.3Q129 111.9 127.3 113.1Q125.5 114.3 123.4 115.4Q121.2 116.4 118.8 117.4L118.5 116.5Q120.8 115.5 122.4 114Q123.9 112.6 124.6 110.8Q125.4 109.1 125.4 107.2Q125.4 105.6 125 104.3Q124.6 103 123.7 102.2Q122.9 101.4 121.6 101.4Q119.8 101.4 118.6 102.3Q117.4 103.2 116.8 104.6Q116.2 106 116.2 107.6Q116.2 108.9 116.7 110.7Q117.1 112.6 118.2 115.2L126.4 134.8Q126.7 135.7 127.1 136.4Q127.6 137.2 128.2 137.6Q128.9 138 129.8 138Q131.2 138 132.3 137.1Q133.5 136.3 134.1 135.1L134.9 135.4Q134.2 137.1 132.3 138.3Q130.4 139.5 127.3 139.5ZM110.8 139.5Q107.2 139.5 104.6 138.4Q102.1 137.4 100.7 135.5Q99.4 133.6 99.4 130.9Q99.4 127.9 100.5 126Q101.6 124.1 103.5 122.8Q105.5 121.5 107.9 120.6Q110.4 119.6 113.1 118.5L113.5 119.3Q111.2 120.4 109.5 121.9Q107.7 123.5 106.6 125.5Q105.6 127.5 105.6 130.1Q105.6 131.3 105.9 132.7Q106.3 134.1 107 135.3Q107.8 136.6 109.2 137.3Q110.5 138.1 112.6 138.1Q116.3 138.1 119.9 136.9Q123.5 135.6 126.7 133.6Q129.9 131.6 132.4 129.3Q134.8 126.9 136.2 124.6Q137.6 122.3 137.6 120.5H138.6Q138.6 121.2 138 121.8Q137.5 122.3 136.6 122.6Q135.7 123 134.7 123Q133.6 123 132.7 122.5Q131.9 122 131.4 121.2Q130.9 120.4 130.9 119.5Q130.9 118.6 131.4 117.9Q131.8 117.2 132.6 116.7Q133.4 116.3 134.4 116.3Q135.7 116.3 136.7 116.8Q137.6 117.4 138.1 118.3Q138.6 119.3 138.6 120.5Q138.6 122.7 137.1 125.3Q135.6 127.8 132.9 130.3Q130.2 132.8 126.7 134.9Q123.2 137 119.1 138.2Q115.1 139.5 110.8 139.5ZM155.8 139.5 149.8 101H155.5L160.4 131.2L177.1 101H178.2L156.9 139.5ZM137.8 139V138H146.2V139ZM141.2 139 149.1 102H145.4V101H150.3L142.3 139ZM166.3 139V138H179.5V139ZM169.8 139 177.9 101H186.6V102H183.4L175.4 139Z"/></g></svg>
+    <div>
+      <p class="rodape-nomes">Anne Caroline &amp; Marcos</p>
+      <p>20 de fevereiro de 2028, Caucaia, Ceará</p>
+    </div>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script>
+const ENDERECO = "Lounge Conceito, Rua Luiz Paiva, 75, Caucaia - CE";
+const DATA_CASAMENTO = new Date("2028-02-20T00:00:00-03:00");
+
+const $ = (id) => document.getElementById(id);
+
+function avisar(el, texto) {
+  el.textContent = texto;
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.textContent = ""; }, 4500);
+}
+
+async function copiar(texto, aviso, mensagemOk) {
+  try {
+    await navigator.clipboard.writeText(texto);
+    avisar(aviso, mensagemOk);
+  } catch (e) {
+    avisar(aviso, "Não deu para copiar automaticamente. Selecione o texto e copie à mão.");
+  }
+}
+
+function atualizarContagem() {
+  const el = $("contagem");
+  const umDia = 864e5, fuso = 3 * 36e5;
+  const hoje = Math.floor((Date.now() - fuso) / umDia);
+  const dia = Math.floor((DATA_CASAMENTO.getTime() - fuso) / umDia);
+  const dias = dia - hoje;
+  if (dias > 1) el.innerHTML = "Faltam <strong>" + dias + "</strong> dias para a decolagem";
+  else if (dias === 1) el.innerHTML = "Falta <strong>1</strong> dia para a decolagem";
+  else if (dias === 0) el.innerHTML = "<strong>Hoje</strong> é dia de embarque";
+  else el.innerHTML = "Decolamos em <strong>20.02.2028</strong>";
+}
+
+function desenharCodigoBarras() {
+  const svg = $("codigo-barras");
+  const texto = "AM2028ANNECAROLINEMARCOS";
+  let x = 0;
+  const barras = [];
+  for (const ch of texto) {
+    const c = ch.charCodeAt(0);
+    for (let i = 0; i < 4; i++) {
+      const largura = ((c >> i) & 1) ? 3 : 1.4;
+      const espaco = ((c >> (i + 2)) & 1) ? 2.2 : 1.2;
+      barras.push('<rect x="' + x.toFixed(1) + '" y="0" width="' + largura + '" height="40"/>');
+      x += largura + espaco;
+    }
+  }
+  svg.setAttribute("viewBox", "0 0 " + x.toFixed(1) + " 40");
+  svg.innerHTML = barras.join("");
+}
+
+function aplicarConfig() {
+  if (CONFIG.horario) {
+    document.querySelectorAll("[data-horario]").forEach((el) => { el.textContent = CONFIG.horario; });
+    $("aviso-horario").hidden = true;
+  }
+  if (!numeroWhats()) {
+    $("enviar-whats").hidden = true;
+    $("dica-envio").textContent = "Copie a mensagem e mande para os noivos no WhatsApp. A confirmação só chega depois que você enviar.";
+  }
+}
+
+function numeroWhats() {
+  let n = (CONFIG.whatsapp || "").replace(/\D/g, "");
+  if (!n) return "";
+  if (n.length <= 11) n = "55" + n;
+  return n;
+}
+
+const normalizar = (t) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+const LISTA = Array.from(new Set(CONVIDADOS.map((n) => String(n).trim()).filter(Boolean)))
+  .map((nome) => ({ nome, partes: normalizar(nome).split(" ") }));
+let selecionados = [];
+let resultados = [];
+let ativo = -1;
+
+function buscar(texto) {
+  const q = normalizar(texto);
+  if (q.replace(/ /g, "").length < 3) return [];
+  const termos = q.split(" ");
+  return LISTA.filter((c) => !selecionados.includes(c.nome) &&
+    termos.every((t) => c.partes.some((p) => p.startsWith(t)))).slice(0, 8);
+}
+
+function marcarAtivo() {
+  const itens = $("lista-nomes").children;
+  for (let i = 0; i < itens.length; i++) itens[i].setAttribute("aria-selected", String(i === ativo));
+  if (ativo >= 0 && itens[ativo]) {
+    $("busca-nome").setAttribute("aria-activedescendant", itens[ativo].id);
+    itens[ativo].scrollIntoView({ block: "nearest" });
+  } else {
+    $("busca-nome").removeAttribute("aria-activedescendant");
+  }
+}
+
+function mostrarResultados() {
+  const ul = $("lista-nomes");
+  const texto = $("busca-nome").value;
+  resultados = buscar(texto);
+  ativo = resultados.length ? 0 : -1;
+  ul.innerHTML = "";
+  resultados.forEach((c, i) => {
+    const li = document.createElement("li");
+    li.id = "opcao-" + i;
+    li.setAttribute("role", "option");
+    li.textContent = c.nome;
+    li.addEventListener("mousedown", (e) => { e.preventDefault(); escolher(i); });
+    ul.appendChild(li);
+  });
+  const aberta = resultados.length > 0;
+  ul.hidden = !aberta;
+  $("busca-nome").setAttribute("aria-expanded", String(aberta));
+  marcarAtivo();
+  const aviso = $("aviso-busca");
+  aviso.classList.remove("ok");
+  const digitou = normalizar(texto).replace(/ /g, "").length >= 3;
+  aviso.textContent = digitou && !aberta ? "Não achamos esse nome na lista. Confira a grafia ou fale com os noivos." : "";
+}
+
+function escolher(i) {
+  const c = resultados[i];
+  if (!c) return;
+  selecionados.push(c.nome);
+  $("busca-nome").value = "";
+  mostrarResultados();
+  desenharSelecionados();
+  $("erro-nome").hidden = true;
+  const aviso = $("aviso-busca");
+  aviso.classList.add("ok");
+  avisar(aviso, c.nome + " entrou na resposta.");
+  $("busca-nome").focus();
+}
+
+function desenharSelecionados() {
+  const ul = $("selecionados");
+  ul.innerHTML = "";
+  selecionados.forEach((nome) => {
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    span.textContent = nome;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = "×";
+    b.setAttribute("aria-label", "Tirar " + nome);
+    b.addEventListener("click", () => {
+      selecionados = selecionados.filter((n) => n !== nome);
+      desenharSelecionados();
+      $("busca-nome").focus();
+    });
+    li.append(span, b);
+    ul.appendChild(li);
+  });
+  $("grupo-selecionados").hidden = selecionados.length === 0;
+  $("rotulo-busca").textContent = selecionados.length ? "Procure mais alguém do seu convite" : "Procure seu nome na lista";
+}
+
+function lerForm() {
+  const form = $("form-checkin");
+  return {
+    selecionados: selecionados.slice(),
+    resposta: form.querySelector('input[name="resposta"]:checked').value,
+    recado: $("recado").value
+  };
+}
+
+function juntarNomes(nomes) {
+  return nomes.length === 1 ? nomes[0] : nomes.slice(0, -1).join(", ") + " e " + nomes[nomes.length - 1];
+}
+
+function montarMensagem(d) {
+  const nomes = d.selecionados;
+  const quando = "no dia 20/02/2028" + (CONFIG.horario ? ", às " + CONFIG.horario : "");
+  let m = "Oi, Anne Caroline e Marcos! ";
+  if (nomes.length === 1) {
+    m += "Aqui é " + nomes[0] + ". ";
+    m += d.resposta === "sim"
+      ? "Confirmo minha presença no casamento de vocês, " + quando + "."
+      : "Infelizmente não vou conseguir ir ao casamento de vocês. Desejo muitas felicidades!";
+  } else {
+    m += d.resposta === "sim"
+      ? "Confirmamos presença no casamento de vocês, " + quando + "."
+      : "Infelizmente não vamos conseguir ir ao casamento de vocês. Desejamos muitas felicidades!";
+    m += "\n\n" + nomes.map((n) => "• " + n).join("\n");
+  }
+  if (d.recado.trim()) m += "\n\nRecado: " + d.recado.trim();
+  return m;
+}
+
+function start(saved) {
+  aplicarConfig();
+  atualizarContagem();
+  desenharCodigoBarras();
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const voo = $("voo");
+    if (voo) voo.remove();
+    $("aviao").setAttribute("transform", "translate(100 22)");
+  }
+
+  if (!LISTA.length) {
+    $("form-checkin").hidden = true;
+    $("lista-vazia").hidden = false;
+  }
+
+  const f = saved && saved.form;
+  if (f) {
+    const nomesValidos = new Set(LISTA.map((c) => c.nome));
+    selecionados = (f.selecionados || []).filter((n) => nomesValidos.has(n));
+    $("recado").value = f.recado || "";
+    $(f.resposta === "nao" ? "resposta-nao" : "resposta-sim").checked = true;
+  }
+  desenharSelecionados();
+
+  const busca = $("busca-nome");
+  busca.addEventListener("input", mostrarResultados);
+  busca.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" && resultados.length) {
+      e.preventDefault();
+      ativo = (ativo + 1) % resultados.length;
+      marcarAtivo();
+    } else if (e.key === "ArrowUp" && resultados.length) {
+      e.preventDefault();
+      ativo = (ativo - 1 + resultados.length) % resultados.length;
+      marcarAtivo();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (ativo >= 0) escolher(ativo);
+    } else if (e.key === "Escape") {
+      $("lista-nomes").hidden = true;
+      busca.setAttribute("aria-expanded", "false");
+    }
+  });
+  busca.addEventListener("blur", () => {
+    $("lista-nomes").hidden = true;
+    busca.setAttribute("aria-expanded", "false");
+  });
+
+  $("copiar-endereco").addEventListener("click", () => copiar(ENDERECO, $("aviso-endereco"), "Endereço copiado."));
+  let mensagemAtual = "";
+  $("form-checkin").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const d = lerForm();
+    if (!d.selecionados.length) {
+      $("erro-nome").hidden = false;
+      $("busca-nome").focus();
+      return;
+    }
+    $("erro-nome").hidden = true;
+    mensagemAtual = montarMensagem(d);
+    const varios = d.selecionados.length > 1;
+    $("res-nome").textContent = juntarNomes(d.selecionados);
+    $("res-resposta").textContent = d.resposta === "sim" ? (varios ? "Vamos, sim" : "Vou, sim") : (varios ? "Não vamos" : "Não vou");
+    $("res-pessoas").textContent = d.selecionados.length;
+    $("res-msg").textContent = mensagemAtual;
+    const n = numeroWhats();
+    if (n) $("enviar-whats").href = "https://wa.me/" + n + "?text=" + encodeURIComponent(mensagemAtual);
+    $("form-checkin").hidden = true;
+    $("resultado").hidden = false;
+    $("resultado").focus();
+  });
+
+  $("copiar-msg").addEventListener("click", () => copiar(mensagemAtual, $("aviso-msg"), "Mensagem copiada. Agora é só colar no WhatsApp."));
+  $("editar").addEventListener("click", () => {
+    $("resultado").hidden = true;
+    $("form-checkin").hidden = false;
+    $("busca-nome").focus();
+  });
+}
+
+window.claude?.hot?.snapshot?.(() => ({ form: lerForm() }));
+window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+</script>
+</body>
+</html>
